@@ -9,27 +9,22 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const images = [
   {
     src: "/images/porto/RSUDKarawangedited.jpg",
-    text: ["KANA JAYA",
-      "Solusi Aluminium, ACP, & Kaca",
-      "Untuk Konstruksi Modern & Elegan",],
+    text: ["KANA JAYA", "Solusi Aluminium, ACP, & Kaca", "Untuk Konstruksi Modern & Elegan"],
   },
   {
     src: "/images/porto/plazapp2jakarta.jpg",
-    text: ["Ketahanan & Estetika",
-      "Material Berkualitas untuk Bangunan Kokoh",
-      "Tampil Mewah, Awet, dan Fungsional"],
+    text: ["Ketahanan & Estetika", "Material Berkualitas untuk Bangunan Kokoh", "Tampil Mewah, Awet, dan Fungsional"],
   },
   {
     src: "/images/porto/PTBintangRacingTeam3840.jpg",
-    text: ["Kualitas Tanpa Kompromi",
-      "Teknologi Modern untuk Keindahan & Kekuatan",
-      "Bangun Masa Depan dengan Material Terbaik"],
+    text: ["Kualitas Tanpa Kompromi", "Teknologi Modern untuk Keindahan & Kekuatan", "Bangun Masa Depan dengan Material Terbaik"],
   },
 ];
 
 export default function ImageSlider(): React.JSX.Element {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
+  const [showControls, setShowControls] = useState(false);
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
@@ -49,12 +44,13 @@ export default function ImageSlider(): React.JSX.Element {
   }, [isHovered, currentIndex]);
 
   return (
-    <div className="relative w-full h-screen b-[200px]">
+    <div className="relative w-full h-screen">
       {/* Container Gambar */}
       <div
         className="relative w-full h-screen"
         onMouseOver={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
+        onClick={() => setShowControls(true)}
       >
         <Image
           src={images[currentIndex].src}
@@ -77,7 +73,7 @@ export default function ImageSlider(): React.JSX.Element {
             transition={{ duration: 0.4, ease: "easeInOut" }}
           >
             {images[currentIndex].text.map((line, i) => (
-              <div key={i} className="text-2xl md:text-4xl lg:text-5xl">
+              <div key={i} className="text-xl md:text-4xl lg:text-5xl"> {/* Logo mengecil di mobile */}
                 {line}
               </div>
             ))}
@@ -85,30 +81,30 @@ export default function ImageSlider(): React.JSX.Element {
         </AnimatePresence>
       </div>
 
-      {/* Tombol Previous & Next */}
-      <div className="absolute top-1/2 left-0 right-0 flex justify-between px-6 transform -translate-y-1/2">
-        <button
-          className="bg-black bg-opacity-50 text-white p-3 rounded-full shadow-md hover:bg-opacity-75"
-          onClick={prevSlide}
-        >
-          <ChevronLeft className="w-6 h-6" />
-        </button>
-        <button
-          className="bg-black bg-opacity-50 text-white p-3 rounded-full shadow-md hover:bg-opacity-75"
-          onClick={nextSlide}
-        >
-          <ChevronRight className="w-6 h-6" />
-        </button>
-      </div>
+      {/* Tombol Previous & Next, hanya muncul saat disentuh di mobile */}
+      {showControls && (
+        <div className="absolute top-1/2 left-0 right-0 flex justify-between px-6 transform -translate-y-1/2 md:flex">
+          <button
+            className="bg-opacity-50 text-white p-3 rounded-full shadow-md hover:bg-opacity-75"
+            onClick={prevSlide}
+          >
+            <ChevronLeft className="w-6 h-6" />
+          </button>
+          <button
+            className="bg-opacity-50 text-white p-3 rounded-full shadow-md hover:bg-opacity-75"
+            onClick={nextSlide}
+          >
+            <ChevronRight className="w-6 h-6" />
+          </button>
+        </div>
+      )}
 
       {/* Indicator */}
       <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {images.map((_, index) => (
           <div
             key={index}
-            className={`h-2 w-2 rounded-full ${
-              index === currentIndex ? "bg-white" : "bg-gray-400"
-            }`}
+            className={`h-2 w-2 rounded-full ${index === currentIndex ? "bg-white" : "bg-gray-400"}`}
           ></div>
         ))}
       </div>
