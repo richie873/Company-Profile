@@ -1,0 +1,59 @@
+import Image from "next/image";
+import { motion } from "framer-motion";
+
+const posts = [
+  {
+    id: 1,
+    title: "Tentang Kami",
+    href: "#",
+    description:
+      "PT. Kana Jaya awalnya bergerak di bidang perdagangan dan jasa konstruksi aluminium, kaca, dan stainless steel.\n\n" +
+      "Seiring perkembangan ekonomi dan teknologi di Indonesia, perusahaan ini memperluas usahanya ke konstruksi composite, panel, partisi, gypsum, plafon, dan baja ringan.\n\n" +
+      "Sejak 1989 hingga 2025, PT. Kana Jaya telah menyelesaikan lebih dari 100+ proyek di berbagai kota di Jawa, seperti Jakarta, Bandung, dan Cilegon, serta proyek di luar Jawa, termasuk Kalimantan dan Sumatera.\n\n" +
+      "Proyek yang ditangani mencakup gedung, kantor, pabrik, mall, rumah sakit, sekolah, dan perumahan. Dengan pengalaman panjang dan komitmen pada kualitas, PT. Kana Jaya terus menjadi perusahaan konstruksi yang profesional, cepat, dan dapat dipercaya, selalu mengutamakan kepuasan pelanggan.",
+  },
+];
+
+export default function ContentSection() {
+  return (
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      {/* Gambar dengan animasi saat scroll */}
+      <motion.div
+        className="flex justify-center lg:justify-end w-full"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1.3, ease: "easeOut" }}
+        viewport={{ once: true }} // Animasi hanya sekali saat muncul di layar
+      >
+        <Image
+          src="/images/porto/PabrikKopiKapalApi.jpeg"
+          alt="Pabrik Kopi Kapal Api - Balaraja Tangerang"
+          title="Pabrik Kopi Kapal Api - Balaraja Tangerang"
+          width={800}
+          height={600}
+          className="rounded-lg shadow-lg w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl h-auto"
+        />
+      </motion.div>
+
+      {/* Artikel dengan animasi saat scroll */}
+      <motion.div
+        className="flex flex-col items-start text-left w-full max-w-2xl sm:max-w-md lg:max-w-2xl"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.3, ease: "easeOut", delay: 0.2 }}
+        viewport={{ once: true }} // Animasi hanya sekali saat muncul di layar
+      >
+        {posts.map((post) => (
+          <article key={post.id} className="w-full">
+            <h3 className="mt-3 text-3xl font-semibold text-gray-900">
+              <a href={post.href}>{post.title}</a>
+            </h3>
+            <p className="text-base text-gray-800 whitespace-pre-line font-sans mt-[10px]">
+              {post.description}
+            </p>
+          </article>
+        ))}
+      </motion.div>
+    </div>
+  );
+}

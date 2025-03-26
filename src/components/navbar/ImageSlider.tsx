@@ -38,7 +38,7 @@ export default function ImageSlider(): React.JSX.Element {
     if (!isHovered) {
       const interval = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-      }, 7000);
+      }, 5000);
       return () => clearInterval(interval);
     }
   }, [isHovered, currentIndex]);
