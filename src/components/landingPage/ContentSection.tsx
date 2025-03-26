@@ -32,6 +32,7 @@ export default function ContentSection() {
           width={800}
           height={600}
           className="rounded-lg shadow-lg w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl h-auto"
+          priority={false}
         />
       </motion.div>
 

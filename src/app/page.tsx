@@ -1,16 +1,16 @@
-'use client'
-import { useEffect } from 'react';
-import Head from 'next/head';
-import Navbar from '@/components/navbar/Navbar';
-import ImageSlider from '@/components/navbar/ImageSlider';
-import ContentSection from '@/components/landingPage/ContentSection';
-import LogoClouds from '@/components/landingPage/LogoClouds';
+"use client";
+import { useEffect } from "react";
+import Head from "next/head";
+import Navbar from "@/components/navbar/Navbar";
+import ImageSlider from "@/components/navbar/ImageSlider";
+import ContentSection from "@/components/landingPage/ContentSection";
+import LogoClouds from "@/components/landingPage/LogoClouds";
 
 export default function LandingPage() {
-    // Scroll ke atas saat halaman dimuat
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
+  // Scroll ke atas saat halaman dimuat
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="bg-stone-50">
@@ -18,7 +18,10 @@ export default function LandingPage() {
 
       <Head>
         <title>Image Slider</title>
-        <meta name="description" content="Image slider example with Next.js, Tailwind CSS, dan TypeScript" />
+        <meta
+          name="description"
+          content="Image slider example with Next.js, Tailwind CSS, dan TypeScript"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -27,18 +30,20 @@ export default function LandingPage() {
       </main>
 
       <div className="relative isolate px-6 lg:px-8">
-        <div className="bg-stone-50 py-10 sm:py-10">
+        <div className="bg-stone-50 py-6 sm:py-8">
           <div className="mx-auto max-w-7xl px-5 lg:px-5">
-              <ContentSection />
+            <ContentSection />
           </div>
           <LogoClouds />
         </div>
       </div>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white text-center py-6 mt-12">
+      <footer className="bg-gray-900 text-white text-center py-6">
         <p className="text-sm">Kana Jaya &copy; 2025 - All Rights Reserved</p>
-        <p className="text-xs mt-1">Email: info@kanajaya.com | Phone: +62 812-3456-7890</p>
+        <p className="text-xs mt-1">
+          Email: info@kanajaya.com | Phone: +62 812-3456-7890
+        </p>
       </footer>
     </div>
   );
