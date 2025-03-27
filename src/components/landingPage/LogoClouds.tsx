@@ -56,7 +56,7 @@ export default function ClientsSection() {
     <div className="bg-white mt-5 mb-5 pb-[10px] sm:mt-10 sm:mb-15 sm:pb-[10px]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-5">
         <h1 className="text-center text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900">
-          Our Clients
+          Client Kami
         </h1>
 
         {/* Animasi untuk baris pertama */}

@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar/Navbar";
 import ImageSlider from "@/components/navbar/ImageSlider";
 import ContentSection from "@/components/landingPage/ContentSection";
 import LogoClouds from "@/components/landingPage/LogoClouds";
+import ValuesSection from "@/components/landingPage/ValuesSection";
 
 export default function LandingPage() {
   // Scroll ke atas saat halaman dimuat
@@ -33,6 +34,7 @@ export default function LandingPage() {
         <div className="bg-stone-50 py-6 sm:py-8">
           <div className="mx-auto max-w-7xl px-5 lg:px-5">
             <ContentSection />
+            <ValuesSection />
           </div>
           <LogoClouds />
         </div>
