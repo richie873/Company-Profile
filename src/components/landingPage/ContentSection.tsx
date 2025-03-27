@@ -61,10 +61,9 @@ const StatisticCard = ({ name, value }: { name: string; value: number }) => {
 };
 
 export default function ContentSection() {
-  const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-[35px]">
       {/* Gambar dengan animasi */}
       <motion.div
         className="flex justify-center lg:justify-end w-full"
@@ -93,32 +92,14 @@ export default function ContentSection() {
         viewport={{ once: true }}
       >
         {posts.map((post) => {
-          const paragraphs = post.description.split("\n\n");
           return (
             <article key={post.id} className="w-full">
               <h3 className="mt-3 text-3xl font-semibold text-gray-900">
                 <a href={post.href}>{post.title}</a>
               </h3>
               <p className="text-base text-gray-800 whitespace-pre-line font-sans mt-[10px]">
-                {isExpanded ? post.description : paragraphs[0]}
+                {post.description}
               </p>
-              {/* Tombol Read More */}
-              {!isExpanded && (
-                <button
-                  onClick={() => setIsExpanded(true)}
-                  className="mt-3 text-blue-600 font-semibold hover:underline italic underline"
-                >
-                  Read More
-                </button>
-              )}
-              {isExpanded && (
-                <button
-                  onClick={() => setIsExpanded(false)}
-                  className="mt-3 text-blue-600 font-semibold hover:underline italic underline"
-                >
-                  Read Less
-                </button>
-              )}
 
               {/* Statistik dengan animasi angka */}
               <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-2 mt-6">

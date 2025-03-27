@@ -6,6 +6,8 @@ import ImageSlider from "@/components/navbar/ImageSlider";
 import ContentSection from "@/components/landingPage/ContentSection";
 import LogoClouds from "@/components/landingPage/LogoClouds";
 import ValuesSection from "@/components/landingPage/ValuesSection";
+import PortoSection from "@/components/landingPage/PortoSection";
+import Footer from "@/components/landingPage/Footer";
 
 export default function LandingPage() {
   // Scroll ke atas saat halaman dimuat
@@ -35,18 +37,12 @@ export default function LandingPage() {
           <div className="mx-auto max-w-7xl px-5 lg:px-5">
             <ContentSection />
             <ValuesSection />
+            <LogoClouds />
+            <PortoSection />
           </div>
-          <LogoClouds />
         </div>
       </div>
-
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white text-center py-6">
-        <p className="text-sm">Kana Jaya &copy; 2025 - All Rights Reserved</p>
-        <p className="text-xs mt-1">
-          Email: info@kanajaya.com | Phone: +62 812-3456-7890
-        </p>
-      </footer>
+      <Footer />
     </div>
   );
 }
