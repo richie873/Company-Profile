@@ -46,7 +46,7 @@ const StatisticCard = ({ name, value }: { name: string; value: number }) => {
 
   return (
     <div ref={ref} className="mx-auto flex max-w-xs flex-col gap-y-4">
-      <dt className="text-xl font-mono text-gray-950">{name}</dt>
+      <dt className="text-xl text-gray-950">{name}</dt>
       <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
         <motion.span
           initial={{ opacity: 0 }}
@@ -61,29 +61,40 @@ const StatisticCard = ({ name, value }: { name: string; value: number }) => {
 };
 
 export default function ContentSection() {
+  const [showTooltip, setShowTooltip] = useState(false);
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-[35px]">
-      {/* Gambar dengan animasi */}
       <motion.div
-        className="flex justify-center lg:justify-end w-full"
+        className="relative flex justify-center lg:justify-end w-full"
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.3, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <Image
-          src="/images/porto/PabrikKopiKapalApi.jpeg"
-          alt="Pabrik Kopi Kapal Api - Balaraja Tangerang"
-          title="Pabrik Kopi Kapal Api - Balaraja Tangerang"
-          width={800}
-          height={600}
-          className="rounded-lg shadow-lg w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl h-auto"
-          priority={false}
-        />
+        <div
+          className="relative"
+          onMouseEnter={() => setShowTooltip(true)}
+          onMouseLeave={() => setShowTooltip(false)}
+          onClick={() => setShowTooltip(!showTooltip)}
+        >
+          <Image
+            src="/images/porto/PabrikKopiKapalApi.jpeg"
+            alt="Pabrik Kopi Kapal Api - Balaraja Tangerang"
+            title="Pabrik Kopi Kapal Api - Balaraja Tangerang"
+            width={800}
+            height={600}
+            className="rounded-lg shadow-lg w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl h-auto cursor-pointer"
+            priority={false}
+          />
+          {showTooltip && (
+            <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 bg-black text-white text-xs px-3 py-2 rounded-md shadow-md">
+              Pabrik Kopi Kapal Api - Balaraja Tangerang
+              <div className="absolute left-1/2 -translate-x-1/2 top-full border-8 border-transparent border-t-black"></div>
+            </div>
+          )}
+        </div>
       </motion.div>
-
-      {/* Artikel dengan animasi */}
       <motion.div
         className="flex flex-col items-start text-left w-full max-w-2xl sm:max-w-md lg:max-w-2xl"
         initial={{ opacity: 0, y: 30 }}
@@ -97,11 +108,9 @@ export default function ContentSection() {
               <h3 className="mt-3 text-3xl font-semibold text-gray-900">
                 <a href={post.href}>{post.title}</a>
               </h3>
-              <p className="text-base text-gray-800 whitespace-pre-line font-sans mt-[10px]">
+              <p className="text-base text-gray-800 whitespace-pre-line mt-[10px]">
                 {post.description}
               </p>
-
-              {/* Statistik dengan animasi angka */}
               <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-2 mt-6">
                 {stats.map((stat) => (
                   <StatisticCard key={stat.id} name={stat.name} value={stat.value} />

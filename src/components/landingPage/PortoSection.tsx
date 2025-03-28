@@ -58,11 +58,15 @@ const posts = [
     return (
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto mt-[-50px] max-w-7xl px-6 lg:px-8 text-center">
-          <div className="mx-auto max-w-2xl">
-            <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">From the blog</h2>
-            <p className="mt-2 text-lg/8 text-gray-600">Learn how to grow your business with our expert advice.</p>
+          <div className="mx-auto max-w-4xl">
+            <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+              Proyek Kami
+            </h2>
+            <p className="mt-[25px] max-w-full text-justify text-base sm:text-lg text-gray-600 leading-relaxed">
+              PT. Kana Jaya telah menyelesaikan lebih dari 100+ proyek di berbagai kota di Jawa, seperti Jakarta, Bandung, dan Cilegon, serta proyek di luar Jawa, termasuk Kalimantan dan Sumatera. Proyek yang ditangani mencakup gedung, kantor, pabrik, mall, rumah sakit, sekolah, dan perumahan. Dengan pengalaman panjang dan komitmen pada kualitas, PT. Kana Jaya terus menjadi perusahaan konstruksi yang profesional, cepat, dan dapat dipercaya, selalu mengutamakan kepuasan pelanggan.
+            </p>
           </div>
-          <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          <div className="mx-auto mt-5 mb-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             {posts.map((post) => (
               <article key={post.id} className="flex max-w-xl flex-col items-start justify-between">
                 <div className="flex items-center gap-x-4 text-xs">
@@ -83,10 +87,16 @@ const posts = [
                       {post.title}
                     </a>
                   </h3>
-                  <p className="mt-5 line-clamp-3 text-sm/6 text-gray-600">{post.description}</p>
+                  <p className="mt-5 max-w-full text-justify text-sm sm:text-base text-gray-600 leading-relaxed">
+                    {post.description}
+                  </p>
                 </div>
                 <div className="relative mt-8 flex items-center gap-x-4">
-                  <img alt="" src={post.author.imageUrl} className="size-10 rounded-full bg-gray-50" />
+                  <img
+                    alt=""
+                    src={post.author.imageUrl}
+                    className="size-10 rounded-full bg-gray-50"
+                  />
                   <div className="text-sm/6">
                     <p className="font-semibold text-gray-900">
                       <a href={post.author.href}>
@@ -102,6 +112,5 @@ const posts = [
           </div>
         </div>
       </div>
-    )
-  }
-  
+    );
+  }  
