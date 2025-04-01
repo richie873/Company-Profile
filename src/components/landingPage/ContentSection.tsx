@@ -108,7 +108,7 @@ export default function ContentSection() {
               <h3 className="mt-3 text-3xl font-semibold text-gray-900">
                 <a href={post.href}>{post.title}</a>
               </h3>
-              <p className="text-base text-gray-800 whitespace-pre-line mt-[10px]">
+              <p className="text-base text-gray-800 whitespace-pre-line mt-[15px]">
                 {post.description}
               </p>
               <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-2 mt-6">

@@ -9,10 +9,10 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const images = [
   {
     src: "/images/porto/RSUDKarawangedited.jpg",
-    text: ["KANA JAYA", "Solusi Aluminium, ACP, & Kaca", "Untuk Konstruksi Modern & Elegan"],
+    text: ["Selamat Datang di Kana Jaya", "Solusi ACP, Kaca, Plafon, Partisi, dan Stainless Steel", "Untuk Konstruksi Modern & Elegan"],
   },
   {
-    src: "/images/porto/plazapp2jakarta.jpg",
+    src: "/images/porto/harper purwakarta.webp",
     text: ["Ketahanan & Estetika", "Material Berkualitas untuk Bangunan Kokoh", "Tampil Mewah, Awet, dan Fungsional"],
   },
   {
@@ -60,7 +60,7 @@ export default function ImageSlider(): React.JSX.Element {
           className="w-full h-full"
         />
         {/* Overlay Hitam 50% */}
-        <div className="absolute inset-0 bg-black opacity-40"></div>
+        <div className="absolute inset-0 bg-black opacity-60"></div>
 
         {/* Animasi Teks */}
         <AnimatePresence mode="wait">

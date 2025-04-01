@@ -1,22 +1,29 @@
-'use client';
-
-import { useState, useEffect } from 'react';
-import { Dialog, DialogPanel } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon, PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
-import Image from 'next/image';
+"use client";
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Dialog, DialogPanel } from "@headlessui/react";
+import {
+  Bars3Icon,
+  XMarkIcon,
+  PhoneIcon,
+  EnvelopeIcon,
+} from "@heroicons/react/24/outline";
+import Image from "next/image";
 
 const navigation = [
-  { name: 'Home', href: '#' },
-  { name: 'About Us', href: '#' },
-  { name: 'Contact Us', href: '#' },
-  { name: 'Our Service', href: '#' },
-  { name: 'Our Project', href: '#' },
+  { name: "Beranda", href: "/" },
+  { name: "Tentang Kami", href: "/tentang-kami" },
+  { name: "Kontak", href: "/kontak" },
+  { name: "Bisnis Kami", href: "/bisnis-kami" },
+  { name: "Proyek", href: "/proyek" },
 ];
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [showContactInfo, setShowContactInfo] = useState(true);
+  const pathname = usePathname(); // Menentukan halaman aktif
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,8 +32,8 @@ export default function Navbar() {
       setShowContactInfo(scrollTop <= 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -34,7 +41,7 @@ export default function Navbar() {
       {/* Navbar */}
       <header
         className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-          isScrolled ? 'bg-[#1E3A8A] shadow-md py-2' : 'bg-white/0 py-4'
+          isScrolled ? "bg-[#1E3A8A] shadow-md py-2" : "bg-white/0 py-4"
         }`}
       >
         {showContactInfo && (
@@ -52,7 +59,7 @@ export default function Navbar() {
         <nav className="flex items-center justify-between px-4 md:px-8 transition-all duration-300">
           {/* Logo + Nama Perusahaan */}
           <div className="flex items-center gap-2 transition-all duration-300">
-            <a href="#" className="p-1.5 flex items-center">
+            <Link href="/" className="p-1.5 flex items-center">
               <Image
                 src="/images/kanajaya.jpg"
                 width={isScrolled ? 40 : 50} // Ukuran logo lebih kecil saat scroll
@@ -60,23 +67,37 @@ export default function Navbar() {
                 alt="Kana Jaya Logo"
                 className="transition-all duration-300"
               />
-            </a>
+            </Link>
             <div className="flex flex-col">
-              <p className={`font-bold transition-all duration-300 ${isScrolled ? 'text-sm' : 'text-lg'} text-white`}>
+              <p
+                className={`font-bold transition-all duration-300 ${
+                  isScrolled ? "text-sm" : "text-lg"
+                } text-white`}
+              >
                 Kana Jaya
               </p>
-              <p className={`transition-all duration-300 ${isScrolled ? 'text-xs' : 'text-sm'} text-white`}>
+              <p
+                className={`transition-all duration-300 ${
+                  isScrolled ? "text-xs" : "text-sm"
+                } text-white`}
+              >
                 General Contractor & Supplier
               </p>
             </div>
           </div>
 
-          {/* Menu Desktop */}
+          {/* Menu Desktop dengan Animasi */}
           <div className="hidden lg:flex lg:gap-x-6">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-lg text-white">
+              <Link
+                key={item.name}
+                href={item.href}
+                className={`relative text-lg px-3 py-1 transition-all duration-300 ${
+                  pathname === item.href ? "text-yellow-400" : "text-white hover:text-yellow-400 hover:underline decoration-yellow-400"
+                }`}
+              >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -93,13 +114,22 @@ export default function Navbar() {
         </nav>
 
         {/* Mobile Menu */}
-        <Dialog open={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)} className="lg:hidden">
+        <Dialog
+          open={mobileMenuOpen}
+          onClose={() => setMobileMenuOpen(false)}
+          className="lg:hidden"
+        >
           <div className="fixed inset-0 z-50 bg-black/50" />
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-4/5 max-w-[280px] bg-white px-6 py-6 shadow-lg">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
-                <Image src="/images/kanajaya.jpg" width={50} height={50} alt="Kana Jaya Logo" />
-              </a>
+              <Link href="/" className="-m-1.5 p-1.5">
+                <Image
+                  src="/images/kanajaya.jpg"
+                  width={50}
+                  height={50}
+                  alt="Kana Jaya Logo"
+                />
+              </Link>
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(false)}
@@ -110,14 +140,14 @@ export default function Navbar() {
             </div>
             <div className="mt-6 space-y-4">
               {navigation.map((item) => (
-                <a
+                <Link
                   key={item.name}
                   href={item.href}
                   className="block px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-100 rounded-md"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
             </div>
           </DialogPanel>

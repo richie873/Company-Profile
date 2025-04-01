@@ -10,12 +10,13 @@ export default function ValuesSection() {
     { title: "Semangat dan Dedikasi", description: "Mengerjakan setiap proyek dengan penuh semangat dan dedikasi guna menciptakan suasana kerja yang positif dan kondusif." },
     { title: "Ketelitian dan Keakuratan", description: "Bekerja dengan cermat dan akurat dalam setiap proses pengerjaan proyek guna memastikan hasil yang optimal bagi pelanggan." },
     { title: "Komitmen terhadap Keunggulan", description: "Memberikan upaya dan kualitas terbaik dalam setiap layanan untuk memastikan kepuasan pelanggan dan hasil kerja yang unggul." },
-    { title: "Efisiensi dan Ketangkasan", description: "Melaksanakan setiap proyek dengan efisien, cepat, dan tetap berorientasi pada kualitas tinggi." }
-  ];
+    { title: "Efisiensi dan Ketangkasan", description: "Melaksanakan setiap proyek dengan efisien, cepat, dan tetap berorientasi pada kualitas tinggi." },
+    { title: "Kreativitas dan Inovasi", description: "Selalu mencari cara baru dan inovatif dalam menyelesaikan proyek agar tetap kompetitif dan berkualitas." } // **Tambahkan ini**
+  ];  
 
   return (
     <div className="bg-stone-50 py-10 px-6 lg:px-8 mt-[55px]">
-      <h2 className="text-3xl font-bold text-gray-900 text-center mb-6">Nilai-Nilai Utama PT Kana Jaya</h2>
+      <h2 className="text-3xl font-bold text-gray-900 text-center mb-15">Nilai-Nilai Utama PT Kana Jaya</h2>
       <motion.div 
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         initial={{ opacity: 0, y: 30 }}
