@@ -15,7 +15,7 @@ const navigation = [
   { name: "Beranda", href: "/" },
   { name: "Tentang Kami", href: "/tentang-kami" },
   { name: "Kontak", href: "/kontak" },
-  { name: "Bisnis Kami", href: "/bisnis-kami" },
+  { name: "Layanan Kami", href: "/bisnis-kami" },
   { name: "Proyek", href: "/proyek" },
 ];
 

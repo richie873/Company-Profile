@@ -2,7 +2,8 @@
 import { useEffect } from "react";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/landingPage/Footer";
-import ContentSection from "@/components/landingPage/ContentSection";
+import TentangKamiSection from "@/components/tentang-kami/TentangKamiSection";
+import VisiMisi from "@/components/tentang-kami/VisiMisi";
 import Image from "next/image";
 
 export default function TentangKami() {
@@ -14,12 +15,7 @@ export default function TentangKami() {
   return (
     <div className="bg-stone-50">
       <Navbar />
-
-      {/* Menambahkan gambar dengan overlay gelap */}
-      <div className="relative w-full h-screen">
-        {/* Overlay hitam dengan transparansi menggunakan Tailwind */}
-
-        {/* Gambar */}
+      <div className="relative w-full h-[500px]">
         <Image
           src="/images/jasa-curtainwall-acp.png"
           alt="Jasa Curtainwall ACP"
@@ -28,11 +24,16 @@ export default function TentangKami() {
           className="object-cover"
         />
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center text-4xl font-bold space-y-2">
-            <span>Tentang Kami</span>
+        <div className="absolute inset-0 flex flex-col leading-normal capitalize items-start justify-center text-white text-left ml-[40px] text-4xl font-bold">
+          <span>
+            Kami aplikator dan pengadaan material untuk <br />
+            Plafon, partisi, stainless steal, cover stainless steal <br />
+            Dan Berbagai jenis tempered laminate
+          </span>
         </div>
       </div>
-      <ContentSection />
+      <TentangKamiSection />
+      <VisiMisi />
       <Footer />
     </div>
   );
