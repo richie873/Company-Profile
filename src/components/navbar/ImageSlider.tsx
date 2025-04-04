@@ -8,15 +8,15 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 // Data gambar dengan teks dalam 3 baris
 const images = [
   {
-    src: "/images/porto/RSUDKarawangedited.jpg",
+    src: "/images/porto/portoImageSlider/RSUDKarawang.jpg",
     text: ["Selamat Datang di Kana Jaya", "Solusi ACP, Kaca, Plafon, Partisi, dan Stainless Steel", "Untuk Konstruksi Modern & Elegan"],
   },
   {
-    src: "/images/porto/harper purwakarta.webp",
+    src: "/images/porto/portoImageSlider/BPJSKetenagakerjaanKlariKarawang.png",
     text: ["Ketahanan & Estetika", "Material Berkualitas untuk Bangunan Kokoh", "Tampil Mewah, Awet, dan Fungsional"],
   },
   {
-    src: "/images/porto/PTBintangRacingTeam3840.jpg",
+    src: "/images/porto/portoImageSlider/BintangRacingTeamSentulBogor.jpg",
     text: ["Kualitas Tanpa Kompromi", "Teknologi Modern untuk Keindahan & Kekuatan", "Bangun Masa Depan dengan Material Terbaik"],
   },
 ];

@@ -59,14 +59,22 @@ export default function Navbar() {
         <nav className="flex items-center justify-between px-4 md:px-8 transition-all duration-300">
           {/* Logo + Nama Perusahaan */}
           <div className="flex items-center gap-2 transition-all duration-300">
-            <Link href="/" className="p-1.5 flex items-center">
-              <Image
-                src="/images/kanajaya.jpg"
-                width={isScrolled ? 40 : 50} // Ukuran logo lebih kecil saat scroll
-                height={isScrolled ? 40 : 50}
-                alt="Kana Jaya Logo"
-                className="transition-all duration-300"
-              />
+            <Link
+              href="/"
+              className="p-1.5 flex items-center relative w-12 h-12 sm:w-10 sm:h-10 md:w-[60px] md:h-[60px] transition-all duration-300"
+            >
+              <div
+                className={`relative transition-all duration-300 ${
+                  isScrolled ? "w-10 h-10" : "w-12 h-12 mt-[5px]"
+                } sm:w-10 sm:h-10 md:w-[60px] md:h-[60px]`}
+              >
+                <Image
+                  src="/images/kanajaya.jpg"
+                  alt="Kana Jaya Logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
             </Link>
             <div className="flex flex-col">
               <p
@@ -93,7 +101,9 @@ export default function Navbar() {
                 key={item.name}
                 href={item.href}
                 className={`relative text-lg px-3 py-1 transition-all duration-300 ${
-                  pathname === item.href ? "text-yellow-400" : "text-white hover:text-yellow-400 hover:underline decoration-yellow-400"
+                  pathname === item.href
+                    ? "text-yellow-400"
+                    : "text-white hover:text-yellow-400 hover:underline decoration-yellow-400"
                 }`}
               >
                 {item.name}

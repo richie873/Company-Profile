@@ -6,7 +6,7 @@ export default function ContentSection() {
   const [showTooltip, setShowTooltip] = useState(false);
 
   return (
-    <div className="flex flex-col lg:flex-row items-center gap-8 w-full mx-auto px-6 lg:px-4">
+    <div className="flex flex-col lg:flex-row items-center gap-8 w-full mx-auto px-4 sm:px-6 lg:px-8">
       {/* Gambar */}
       <motion.div
         className="relative flex justify-center w-full lg:w-1/2"
@@ -16,7 +16,7 @@ export default function ContentSection() {
         viewport={{ once: true }}
       >
         <div
-          className="relative w-full mt-[60px]"
+          className="relative w-full mt-[40px] sm:mt-[60px]"
           onMouseEnter={() => setShowTooltip(true)}
           onMouseLeave={() => setShowTooltip(false)}
           onClick={() => setShowTooltip(!showTooltip)}
@@ -27,7 +27,7 @@ export default function ContentSection() {
             title="Pabrik Kopi Kapal Api - Balaraja Tangerang"
             width={800}
             height={600}
-            className="rounded-lg shadow-lg w-full h-[400px] object-cover"
+            className="rounded-lg shadow-lg w-full h-[300px] sm:h-[400px] object-cover"
             priority={false}
           />
           {showTooltip && (
@@ -47,11 +47,11 @@ export default function ContentSection() {
         transition={{ duration: 1.3, ease: "easeOut", delay: 0.2 }}
         viewport={{ once: true }}
       >
-        <div className="ml-6 mr-6 text-justify leading-normal mt-[40px]">
-          <h1 className="mt-3 text-xl font-semibold text-gray-900 mb-[10px]">
+        <div className="ml-4 sm:ml-6 mr-4 sm:mr-6 text-justify mt-[30px] sm:mt-[40px]">
+          <h1 className="mt-3 text-lg sm:text-xl font-semibold text-gray-900 mb-[10px]">
             SEJARAH PT. KANA JAYA
           </h1>
-          <div className="space-y-4 text-base">
+          <div className="space-y-3 sm:space-y-4 text-sm sm:text-base leading-normal lg:text-base">
             <p>
               PT Kana Jaya awalnya merupakan perusahaan dagang yang bergerak di
               bidang penyediaan barang dan jasa konstruksi, seperti aluminium,
@@ -69,7 +69,7 @@ export default function ContentSection() {
               Seiring perkembangan perusahaan, PD Kana Jaya berubah menjadi
               badan hukum dengan nama PT Kana Jaya. Perubahan ini diresmikan
               melalui Akta Notaris Bapak Ida Rosida Suryana, SH, Nomor 57,
-              tanggal 10 Agustus 2002 .
+              tanggal 10 Agustus 2002.
             </p>
 
             <p>
@@ -79,10 +79,10 @@ export default function ContentSection() {
             </p>
 
             <p>
-              Saat ini, PT Kana Jaya tidak hanya menyediakan aluminium, kaca,
-              dan stainless steel, tetapi juga memperluas layanannya ke berbagai
-              bidang konstruksi lainnya, seperti composite, panel, partisi,
-              gypsum, plafon, dan baja ringan.
+              Saat ini, PT Kana Jaya tidak hanya mengerjakan dan menyediakan pemasangan pintu dan jendela aluminium, kaca,
+              dan stainless steel. Tetapi juga memperluas layanannya ke berbagai
+              bidang konstruksi lainnya, seperti Curtain Wall Facade, Aluminium Composite Panel (ACP), Aneka Plafon,
+              Partisi, dan Mengerjakan Kontruksi Baja, Pembangunan Perumahan, Pergudangan, Pembuatan Jalan, dan Irigasi.
             </p>
           </div>
         </div>

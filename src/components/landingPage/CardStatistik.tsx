@@ -34,9 +34,9 @@ const StatisticCard = ({ name, value }: { name: string; value: number }) => {
   const animatedValue = useCountUp(value, isInView); // Panggil animasi hanya jika terlihat
 
   return (
-      <div ref={ref} className="mx-auto flex max-w-xs flex-col gap-y-4 ml-[50px]">
-      <dt className="text-3xl text-white">{name}</dt>
-      <dd className="order-first text-5xl font-semibold tracking-tight text-white sm:text-5xl">
+    <div ref={ref} className="mx-auto flex flex-col gap-y-3">
+      <dt className="text-xl sm:text-2xl lg:text-3xl text-white">{name}</dt>
+      <dd className="order-first text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-white">
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: isInView ? 1 : 0 }}
@@ -51,24 +51,22 @@ const StatisticCard = ({ name, value }: { name: string; value: number }) => {
 
 export default function ContentSection() {
   return (
-    <div className="relative flex items-center justify-center w-full mt-[50px]">
+    <div className="relative flex items-center justify-center mt-[50px]">
       {/* Background Image */}
       <Image
-        src="/images/proyek-konstruksi.jpeg"
-        alt="Pabrik Kopi Kapal Api - Balaraja Tangerang"
-        title="Pabrik Kopi Kapal Api - Balaraja Tangerang"
-        width={800}
-        height={600}
-        className="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg"
+        src="/images/porto/portoImageSlider/RSUDKarawang.jpg"
+        alt="Proyek Konstruksi"
+        title="Proyek Konstruksi"
+        layout="fill" // Memastikan gambar memenuhi parent
+        objectFit="cover" // Mengisi area tanpa distorsi
+        className="absolute inset-0 w-full h-full object-cover"
         priority={false}
       />
-
       {/* Overlay (Agar teks tetap terbaca) */}
       <div className="absolute inset-0 bg-black opacity-60 rounded-lg"></div>
-
       {/* Kontainer Teks & Statistik */}
-      <div className="relative z-10 text-center p-10">
-        <dl className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
+      <div className="relative z-10 text-center p-6 sm:p-10">
+        <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-8">
           {stats.map((stat) => (
             <StatisticCard key={stat.id} name={stat.name} value={stat.value} />
           ))}

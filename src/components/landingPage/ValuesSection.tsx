@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function ValuesSection() {
   const values = [
-    { title: "Membangun Hubungan yang Kuat", description: "Menjaga hubungan yang positif dan profesional antara PT. Kana Jaya dan pelanggan untuk menciptakan lingkungan kerja yang harmonis dan produktif." },
+    { title: "Membangun Hubungan yang Kuat", description: "Menjaga hubungan yang positif dan profesional antara PT. Kana Jaya dan pelanggan untuk menciptakan lingkungan kerja yang harmonis dan berkelanjutan." },
     { title: "Tanggung Jawab", description: "Bertanggung jawab atas setiap proyek yang dipercayakan kepada PT. Kana Jaya, baik dalam skala besar maupun kecil, dengan menjunjung tinggi profesionalisme dan integritas." },
     { title: "Etika dan Kesopanan", description: "Menunjukkan sikap sopan, ramah, dan profesional dalam setiap interaksi dengan pelanggan dan mitra PT. Kana Jaya." },
     { title: "Pemanfaatan Sumber Daya Secara Optimal", description: "Menggunakan keterampilan dan sumber daya PT. Kana Jaya secara maksimal untuk memastikan keberhasilan setiap proyek yang dikerjakan." },

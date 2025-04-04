@@ -33,9 +33,9 @@ export default function LandingPage() {
         <ImageSlider />
       </main>
 
-      <div className="relative isolate px-6 lg:px-8">
+      <div className="relative isolate w-full">
         <div className="bg-stone-50 py-6 sm:py-8">
-          <div className="mx-auto max-w-7xl px-5 lg:px-5">
+          <div className="w-full px-5 lg:px-5">
             <ContentSection />
             <CardStatistik />
             <ValuesSection />

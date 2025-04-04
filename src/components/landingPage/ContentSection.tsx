@@ -10,8 +10,9 @@ const posts = [
     "Didirikan Tahun 1989 PT Kana Jaya perusahaan bergerak di bidang perdagangan dan jasa konstruksi aluminium, kaca, dan stainless steel.\n\n" +
     "Legalitas Perusahaan Pada 24 Agustus 1995, PT Kana Jaya mendapatkan Tanda Daftar Perusahaan dari Kepala Kantor Departemen Perdagangan Kabupaten Bekasi (No. 10075607603).\n\n" +
     "PT Kana Jaya Resmi berbadan hukum pada 10 Agustus 2002 dengan Akta Notaris No. 57 oleh Bapak Ida Rosida Suryana, SH.\n\n" +
-    "Ekspansi Bisnis Seiring dengan perkembangan ekonomi, industri, dan teknologi di Indonesia, PT. Kana Jaya memperluas cakupan bisnisnya.\n\n" +
-    "Bidang Usaha Saat Ini Tidak hanya fokus pada aluminium, kaca, dan stainless steel, tetapi juga Composite, Panel, Partisi, Gypsum, Plafon, Baja Ringan",
+    "Ekspansi bisnis seiring dengan perkembangan ekonomi, industri, dan teknologi di Indonesia, PT. Kana Jaya memperluas cakupan bisnisnya.\n\n" +
+    "Bidang usaha saat ini kami Mengerjakan dan Menyediakan Pemasangan Pintu dan Jendela Aluminium, Semua Jenis Kaca, Stainless Steel, Curtain Wall Facade, Aluminium Composite Panel (ACP), Partisi, Gypsum, Plafon Dan Baja Ringan.\n\n" +
+    "Dan Kami Juga Mengerjakan Pembangunan Perumahan, Ruko, Pergudangan, Pembuatan Jalan Dan Saluran Irigasi.",
   },
 ];
 

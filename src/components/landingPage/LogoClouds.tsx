@@ -20,11 +20,11 @@ const logoRows = [
   [
     { src: "/images/logo/1PTPembangunanPerumahan.png", alt: "PT Pembangunan Perumahan" },
     { src: "/images/logo/2PTPrakarsaDirgaAneka.png", alt: "PT Prakarsa Dirga Aneka" },
-    { src: "/images/logo/3NusaRayaCipta.png", alt: "Nusa Raya Cipta" },
+    { src: "/images/logo/5ptjayaobayashilogo.jpg", alt: "PT Jaya Obayashi" },
     { src: "/images/logo/4PTTokyuConstructionIndonesia.png", alt: "PT Tokyu Construction Indonesia" },
   ],
   [
-    { src: "/images/logo/5ptjayaobayashilogo.jpg", alt: "PT Jaya Obayashi" },
+    { src: "/images/logo/8MeindoElangIndah.jpg", alt: "PT Meindo Elang Indah" },
     { src: "/images/logo/6MuriAgungAbadi.jpg", alt: "Muri Agung Abadi" },
     { src: "/images/logo/7BakrieBuildingIndustries.png", alt: "Bakrie Building Industries" },
     { src: "/images/logo/8ptbukitmuriajayaestateresinda.jpg", alt: "PT Bukit Muria Jaya Estate Resinda" },
@@ -33,7 +33,7 @@ const logoRows = [
   {src: "/images/logo/9MitraBangunPersada.png", alt: "Mitra Bangun Persada"},
   {src: "/images/logo/10pptaiseiindonesia.jpg", alt: "PP Taisei Indonesia"},
   {src: "/images/logo/11ptalazharmemorialgarden.png", alt: "PT Al Azhar Memorial Garden"},
-  {src: "/images/logo/12PTCitoMedikaUtama.jpg", alt: "PT Cito Medika Utama"},
+  {src: "/images/logo/3NusaRayaCipta.png", alt: "Nusa Raya Cipta" },
   ],
   [
     {src: "/images/logo/13ptdimaindonesiaa.png", alt: "PT Dima Indonesia"},

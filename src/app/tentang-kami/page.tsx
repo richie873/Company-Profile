@@ -15,7 +15,9 @@ export default function TentangKami() {
   return (
     <div className="bg-stone-50">
       <Navbar />
-      <div className="relative w-full h-[500px]">
+      
+      {/* Hero Section */}
+      <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px]">
         <Image
           src="/images/jasa-curtainwall-acp.png"
           alt="Jasa Curtainwall ACP"
@@ -23,15 +25,19 @@ export default function TentangKami() {
           objectFit="cover" // Mengatur gambar agar menutupi seluruh area tanpa distorsi
           className="object-cover"
         />
-        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
-        <div className="absolute inset-0 flex flex-col leading-normal capitalize items-start justify-center text-white text-left ml-[40px] text-4xl font-bold">
-          <span>
-            Kami aplikator dan pengadaan material untuk <br />
-            Plafon, partisi, stainless steal, cover stainless steal <br />
-            Dan Berbagai jenis tempered laminate
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        {/* Teks Hero */}
+        <div className="absolute inset-0 flex flex-col leading-normal capitalize items-start justify-center text-white text-left px-6 sm:px-12">
+          <span className="text-xl sm:text-2xl md:text-4xl font-bold">
+            Kami aplikator dan pengadaan material untuk <br className="hidden sm:block" />
+            Plafon, Partisi, Stainless Steel, Cover Stainless Steel <br className="hidden sm:block" />
+            Curtain Wall, Aluminium Composite Panel <br />
+            Dan Berbagai Jenis Tempered Laminate
           </span>
         </div>
       </div>
+
       <TentangKamiSection />
       <VisiMisi />
       <Footer />
