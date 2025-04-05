@@ -1,45 +1,48 @@
-import { useState } from 'react';
-import Image from 'next/image';
-import { Tooltip } from 'react-tooltip';
-import 'react-tooltip/dist/react-tooltip.css'; // Tambahkan ini
-import { useRouter } from 'next/navigation';
+"use client";
+
+import { useState } from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
+import { Tooltip } from "react-tooltip";
+import "react-tooltip/dist/react-tooltip.css";
 
 const posts = [
   {
     id: 1,
-    title: 'Proyek Gedung Perkantoran',
-    description: 'Pabrik Kopi Kapal Api - Bala Raja Tangerang',
-    imageUrl: '/images/porto/portoSection/PabrikKopiKapalApi.jpeg',
+    title: "Proyek Gedung Perkantoran",
+    description: "Bintang Racing Team - Bogor",
+    imageUrl: "/images/porto/proyek/Bintang Racing Team - Sentul Bogor.jpg",
   },
   {
     id: 2,
-    title: 'Renovasi Mall Besar',
-    description: 'PT Bintang Racing Team - Bogor',
-    imageUrl: '/images/porto/portoSection/2.PT Bintang Racing Team.jpg',
+    title: "Renovasi Mall Besar",
+    description: "BPJS Ketenagakerjaan - Karawang",
+    imageUrl: "/images/porto/proyek/BPJS Ketenagakerjaan - Klari, Karawang.png",
   },
   {
     id: 3,
-    title: 'Konstruksi Pabrik',
-    description: 'Bank Jabar - Cibinong',
-    imageUrl: '/images/porto/portoSection/bank jabar cibinong.jpg',
+    title: "Konstruksi Pabrik",
+    description: "Evalube - Cibitung",
+    imageUrl: "/images/porto/proyek/Evalube - Cibitung.jpg",
   },
   {
     id: 4,
-    title: 'Proyek Gedung Perkantoran',
-    description: 'Hotel Harper - Purwakarta',
-    imageUrl: '/images/porto/portoSection/harper purwakarta.webp',
+    title: "Proyek Gedung Perkantoran",
+    description: "Gereja Katolik BIC - Cikampek",
+    imageUrl: "/images/porto/proyek/Gereja Katolik BIC - Cikampek.jpg",
   },
   {
     id: 5,
-    title: 'Renovasi Mall Besar',
-    description: 'Telkom - Bandung',
-    imageUrl: '/images/porto/portoSection/Risti Telkom-Bandung.jpg',
+    title: "Renovasi Mall Besar",
+    description: "Hotel Igloo - Cibitung",
+    imageUrl: "/images/porto/proyek/Hotel Igloo - Cibitung.jpg",
   },
   {
     id: 6,
-    title: 'Konstruksi Pabrik',
-    description: 'RSUD - Karawang',
-    imageUrl: '/images/porto/portoSection/RSUD Karawang edited.jpg',
+    title: "Konstruksi Pabrik",
+    description: "Musholla Al Azhar Memorial Garden",
+    imageUrl: "/images/porto/proyek/Musholla Al Azhar Memorial Garden.jpg",
   },
 ];
 
@@ -50,86 +53,90 @@ export default function Example() {
     description: string;
     imageUrl: string;
   } | null>(null);
-  
+
   const router = useRouter();
-  
+
   return (
-    <div className="bg-white py-24 sm:py-35">
+    <div className="bg-white pt-16 pb-10 sm:pt-20 sm:pb-12 md:pt-24 md:pb-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
-        <div className="mx-auto max-w-4xl">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="mx-auto max-w-4xl"
+        >
           <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
             Proyek Kami
           </h2>
-          <p className="mt-6 max-w-full text-justify text-base sm:text-lg text-gray-800 leading-relaxed">
-            PT. Kana Jaya telah menyelesaikan lebih dari 100+ proyek di berbagai
-            kota di Jawa, seperti Jakarta, Bandung, dan Cilegon, serta proyek di
-            luar Jawa, termasuk Kalimantan dan Sumatera. Proyek yang ditangani
-            mencakup gedung, kantor, pabrik, mall, rumah sakit, sekolah, dan
-            perumahan. Dengan pengalaman panjang dan komitmen pada kualitas, PT.
-            Kana Jaya terus menjadi perusahaan konstruksi yang profesional,
-            cepat, dan dapat dipercaya, karena kami selalu mengutamakan kepuasan
-            pelanggan.
-          </p>
-        </div>
+        </motion.div>
 
-        {/* Grid Proyek */}
-        <div className="grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-5 sm:mt-10 sm:pt-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          {posts.map((post) => (
-            <div key={post.id} className="cursor-pointer">
-              {/* Gambar dengan icon 🔍 */}
-              <div
-                className="relative group"
-                onClick={() => setSelectedProject(post)}
-              >
-                <Image
-                  src={post.imageUrl}
-                  alt={post.title}
-                  width={400}
-                  height={300}
-                  className="w-full h-[250px] object-cover rounded-lg shadow-md transition duration-300"
-                />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+          {posts.map((post, index) => (
+            <motion.div
+              key={post.id}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className="cursor-pointer relative"
+              onClick={() => setSelectedProject(post)}
+            >
+              <Image
+                src={post.imageUrl}
+                alt={post.title}
+                width={400}
+                height={300}
+                className="w-full h-[250px] object-cover rounded-lg shadow-md"
+              />
 
-                {/* Icon 🔍 tetap di dalam gambar */}
-                <div className="absolute bottom-4 left-4">
-                  <svg
-                    data-tooltip-id={`tooltip-${post.id}`}
-                    data-tooltip-content="Lihat Detail"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="white"
-                    className="size-9"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607ZM10.5 7.5v6m3-3h-6"
-                    />
-                  </svg>
-                  {/* Tooltip */}
-                  <Tooltip id={`tooltip-${post.id}`} />
-                </div>
+              {/* Icon 🔍 dengan Tooltip */}
+              <div className="absolute bottom-[40px] left-4">
+                <svg
+                  data-tooltip-id={`tooltip-${post.id}`}
+                  data-tooltip-content="Lihat Detail"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  stroke="white"
+                  className="size-9"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607ZM10.5 7.5v6m3-3h-6"
+                  />
+                </svg>
+                <Tooltip id={`tooltip-${post.id}`} />
               </div>
 
-              {/* Deskripsi */}
               <div className="mt-3 text-center">
                 <span className="block text-gray-700 text-base font-medium">
                   {post.description}
                 </span>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
+
         {/* Button di tengah */}
-        <div className="w-full flex justify-center mt-10">
-          <button
-            onClick={() => router.push("/our-project")}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="w-full flex justify-center mt-10"
+        >
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.3 }}
+            onClick={() => router.push("/proyek")}
             className="px-6 py-3 bg-blue-600 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-blue-700 transition"
           >
             Lihat Selengkapnya
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
       </div>
 
       {/* Modal Detail */}
@@ -149,9 +156,9 @@ export default function Example() {
               height={300}
               className="rounded-lg w-full h-[300px]"
             />
-            <h3 className="mt-4 text-xl font-semibold text-gray-900">
+            {/* <h3 className="mt-4 text-xl font-semibold text-gray-900">
               {selectedProject.title}
-            </h3>
+            </h3> */}
             <p className="mt-2 text-gray-600">{selectedProject.description}</p>
             <button
               onClick={() => setSelectedProject(null)}

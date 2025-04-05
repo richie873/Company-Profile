@@ -19,7 +19,7 @@ export default function TentangKami() {
       {/* Hero Section */}
       <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px]">
         <Image
-          src="/images/jasa-curtainwall-acp.png"
+          src="/images/porto/proyek/PabrikKopiKapalApi.jpeg"
           alt="Jasa Curtainwall ACP"
           layout="fill" // Membuat gambar mengisi seluruh div
           objectFit="cover" // Mengatur gambar agar menutupi seluruh area tanpa distorsi

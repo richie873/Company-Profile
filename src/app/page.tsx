@@ -8,7 +8,8 @@ import LogoClouds from "@/components/landingPage/LogoClouds";
 import ValuesSection from "@/components/landingPage/ValuesSection";
 import PortoSection from "@/components/landingPage/PortoSection";
 import Footer from "@/components/landingPage/Footer";
-import CardStatistik from "@/components/landingPage/CardStatistik"
+import CardStatistik from "@/components/landingPage/CardStatistik";
+import LayananKami from "@/components/landingPage/LayananKami";
 
 export default function LandingPage() {
   // Scroll ke atas saat halaman dimuat
@@ -41,6 +42,7 @@ export default function LandingPage() {
             <ValuesSection />
             <LogoClouds />
             <PortoSection />
+            <LayananKami />
           </div>
         </div>
       </div>

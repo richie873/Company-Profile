@@ -15,8 +15,8 @@ const navigation = [
   { name: "Beranda", href: "/" },
   { name: "Tentang Kami", href: "/tentang-kami" },
   { name: "Kontak", href: "/kontak" },
-  { name: "Layanan Kami", href: "/bisnis-kami" },
   { name: "Proyek", href: "/proyek" },
+  { name: "Layanan Kami", href: "/bisnis-kami" },
 ];
 
 export default function Navbar() {
@@ -48,11 +48,11 @@ export default function Navbar() {
           <div className="bg-gray-100 mt-[-18px] py-2 text-sm text-gray-700 flex justify-end px-4 md:px-8 transition-all duration-300">
             <div className="flex items-center">
               <EnvelopeIcon className="w-5 h-5 text-gray-700" />
-              <span className="ml-[3px] mr-[15px]">kanajaya@gmail.com</span>
+              <span className="ml-[3px] mr-[15px]">kana.jaya@gmail.com</span>
             </div>
             <div className="flex items-center">
               <PhoneIcon className="w-5 h-5 text-gray-700" />
-              <span className="ml-[3px]">081291424681</span>
+              <span className="ml-[3px]">085877812999</span>
             </div>
           </div>
         )}

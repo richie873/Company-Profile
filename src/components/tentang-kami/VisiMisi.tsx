@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import { motion } from "framer-motion";
 
 // Data untuk Visi dan Misi
@@ -30,24 +29,26 @@ const StatisticCard = ({
   name: string;
   description: string;
 }) => {
-  const ref = useRef(null);
 
   return (
-    <div ref={ref} className="flex w-full flex-col gap-y-3 sm:gap-y-4 items-start text-justify">
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="flex w-full flex-col gap-y-3 sm:gap-y-4 items-start text-justify"
+    >
       <dt className="text-gray-950 text-lg sm:text-xl font-semibold">{name}</dt>
       <dd className="text-gray-900 leading-snug whitespace-pre-line text-sm sm:text-base md:text-lg lg:text-base">
-        {/* Responsif dari kecil ke besar */}
-        <motion.p>
-          {description}
-        </motion.p>
+        {description}
       </dd>
-    </div>
+    </motion.div>
   );
 };
 
 export default function ContentSection() {
   return (
-    <div className="px-4 sm:px-6 md:px-8 mt-[40px] bg-stone-100">
+    <div className="px-4 sm:px-6 md:px-8 mt-6 mb-8 bg-stone-100">
       {/* Visi dan Misi */}
       <dl className="grid grid-cols-1 lg:grid-cols-2 gap-x-6 sm:gap-x-8 gap-y-12 sm:gap-y-16 text-left">
         {stats.map((stat) => (
