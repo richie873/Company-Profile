@@ -13,7 +13,6 @@ export default function TentangKami() {
   return (
     <div className="bg-stone-50">
       <Navbar />
-      <div className="p-14 bg-[#1E3A8A] shadow-md"></div>
       <ContactUs />
       <Footer />
     </div>

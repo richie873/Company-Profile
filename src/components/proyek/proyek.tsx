@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useRouter } from "next/navigation";
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
 
@@ -44,6 +43,96 @@ const posts = [
     description: "Harper - Purwakarta",
     imageUrl: "/images/porto/proyek/harper purwakarta.webp",
   },
+  {
+    id: 7,
+    title: "harper purwakarta",
+    description: "Heritage - Bandung",
+    imageUrl: "/images/porto/proyek/heritage bandung.jpg",
+  },
+  {
+    id: 8,
+    title: "Hotel Igloo - Cibitung",
+    description: "Hotel Igloo - Cibitung",
+    imageUrl: "/images/porto/proyek/Hotel Igloo - Cibitung.jpg",
+  },
+  {
+    id: 9,
+    title: "Musholla Al Azhar Memorial Garden",
+    description: "Musholla Al Azhar Memorial Garden",
+    imageUrl: "/images/porto/proyek/Musholla Al Azhar Memorial Garden.jpg",
+  },
+  {
+    id: 10,
+    title: "Pabrik Kopi Kapal Api",
+    description: "Pabrik Kopi Kapal Api",
+    imageUrl: "/images/porto/proyek/PabrikKopiKapalApi.jpeg",
+  },
+  {
+    id: 11,
+    title: "PT Kawai Indonesia Factory",
+    description: "PT Kawai Indonesia Factory",
+    imageUrl: "/images/porto/proyek/PT Kawai indonesia factory.jpg",
+  },
+  {
+    id: 12,
+    title: "PT Kyowa Indonesia - Cikarang",
+    description: "PT Kyowa Indonesia - Cikarang",
+    imageUrl: "/images/porto/proyek/PT Kyowa indonesia - ejip cikarang.jpg",
+  },
+  {
+    id: 13,
+    title: "PT NBC - KIIC Karawang",
+    description: "PT NBC - KIIC Karawang",
+    imageUrl: "/images/porto/proyek/PT NBC - KIIC Karawang.jpg",
+  },
+  {
+    id: 14,
+    title: "PT Top Tube Indonesia - Karawang",
+    description: "PT Top Tube Indonesia - Karawang",
+    imageUrl: "/images/porto/proyek/PT Top Tube Indonesia 2- Karawang.jpg",
+  },
+  {
+    id: 15,
+    title: "PT Voith Paper Rolls Indonesia - Karawang",
+    description: "PT Voith Paper Rolls Indonesia - Karawang",
+    imageUrl: "/images/porto/proyek/PT Voith Paper Rolls Indonesia - Karawang.jpg",
+  },
+  {
+    id: 16,
+    title: "Risti Telkom - Bandung",
+    description: "Risti Telkom - Bandung",
+    imageUrl: "/images/porto/proyek/Risti Telkom-Bandung.jpg",
+  },
+  {
+    id: 17,
+    title: "RS Imanuel Way Halim - Bandar Lampung",
+    description: "RS Imanuel Way Halim - Bandar Lampung",
+    imageUrl: "/images/porto/proyek/RS Imanuel Way Halim - Bandar Lampung.jpg",
+  },
+  {
+    id: 18,
+    title: "RS Melinda 2 - Bandung",
+    description: "RS Melinda 2 - Bandung",
+    imageUrl: "/images/porto/proyek/RS Melinda 2 - Bandung.jpg",
+  },
+  {
+    id: 19,
+    title: "Rumah Sakit Saraswati - Karawang",
+    description: "Rumah Sakit Saraswati - Karawang",
+    imageUrl: "/images/porto/proyek/Rumah Sakit Saraswati - Karawang.jpg",
+  },
+  {
+    id: 20,
+    title: "TVS Motor",
+    description: "TVS Motor",
+    imageUrl: "/images/porto/proyek/tvs motor.webp",
+  },
+  {
+    id: 21,
+    title: "Yamaha Piano - Jakarta",
+    description: "Yamaha Piano - Jakarta",
+    imageUrl: "/images/porto/proyek/Yamaha Piano Jakarta edited.jpg",
+  },
 ];
 
 export default function Example() {
@@ -54,10 +143,9 @@ export default function Example() {
     imageUrl: string;
   } | null>(null);
 
-  const router = useRouter();
 
   return (
-    <div className="bg-white pt-16 pb-10 sm:pt-20 sm:pb-12 md:pt-24 md:pb-16">
+    <div className="mt-[50px] pt-16 pb-10 sm:pt-20 sm:pb-12 md:pt-24 md:pb-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
         <motion.div
           initial={{ opacity: 0 }}
@@ -75,9 +163,9 @@ export default function Example() {
           {posts.map((post, index) => (
             <motion.div
               key={post.id}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: index * 0.1 }}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: index * 0.03 }}
               viewport={{ once: true }}
               className="cursor-pointer relative"
               onClick={() => setSelectedProject(post)}
@@ -119,24 +207,6 @@ export default function Example() {
             </motion.div>
           ))}
         </div>
-
-        {/* Button di tengah */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="w-full flex justify-center mt-10"
-        >
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.3 }}
-            onClick={() => router.push("/proyek")}
-            className="px-6 py-3 bg-blue-600 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-blue-700 transition"
-          >
-            Lihat Selengkapnya
-          </motion.button>
-        </motion.div>
       </div>
 
       {/* Modal Detail */}

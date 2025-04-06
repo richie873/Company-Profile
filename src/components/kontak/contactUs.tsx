@@ -1,50 +1,57 @@
 import { motion } from "framer-motion";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-// import Link from "next/link";
+import Image from "next/image";
 
 export default function ContentSection() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-white px-4 sm:px-6 lg:px-8">
+    <div className="relative w-full h-screen">
+      {/* Fullscreen Background Image */}
+      <Image
+        src="/images/porto/proyek/PabrikKopiKapalApi.jpeg"
+        alt="Jasa Curtainwall ACP"
+        fill
+        className="object-cover"
+      />
+
+      {/* Overlay gelap */}
+      <div className="absolute inset-0 bg-black/70"></div>
+
+      {/* Konten di tengah gambar */}
       <motion.div
-        className="flex flex-col text-center w-full max-w-xl"
+        className="absolute inset-0 flex flex-col items-center justify-center text-white px-4 text-center"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.3, ease: "easeOut", delay: 0.2 }}
         viewport={{ once: true }}
       >
-        <h1 className="text-2xl sm:text-3xl ml-[20px] font-semibold mt-[-100px] text-gray-900 mb-8">
-          Hubungi Kami
-        </h1>
+        <h1 className="text-3xl sm:text-4xl font-bold mb-6">Hubungi Kami</h1>
 
-        <div className="space-y-6 text-sm sm:text-base lg:text-lg text-gray-800">
-          <div className="flex items-center gap-2 justify-center">
-            <FaPhone className="text-blue-600 text-xl" />
-            <p className="font-semibold">Telepon / WhatsApp</p>
-            <div>
-              <p>+62 858-7781-2999</p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-4 justify-center">
-            <FaEnvelope className="text-red-600 text-xl" />
-            <p className="font-semibold">Email</p>
-            <p>kana.jaya@gmail.com</p>
-          </div>
-
-          <div className="flex items-center gap-4 justify-center">
-            <FaMapMarkerAlt className="text-green-600 text-xl" />
-            <p className="font-semibold">Alamat</p>
-            <p>Resinda blok D3 no 5 Karawang</p>
-          </div>
-          {/* Tombol Google Maps */}
-          {/* <Link
-            href="https://www.google.com/maps?q=Jl.+Contoh+Alamat+No.+123,+Surabaya"
+        <div className="space-y-4 text-sm sm:text-base lg:text-lg">
+          {/* WhatsApp */}
+          <a
+            href="https://wa.me/6285877812999"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-2 text-white bg-green-600 hover:bg-green-700 px-4 py-2 rounded-md transition duration-200 text-sm sm:text-base"
+            className="flex items-center gap-3 justify-center hover:underline"
           >
-            Lihat di Google Maps
-          </Link> */}
+            <FaPhone className="text-blue-400 text-xl" />
+            <span className="font-medium text-xl underline">+62 858-7781-2999</span>
+          </a>
+
+          {/* Email */}
+          <a
+            href="mailto:kana.jaya@gmail.com"
+            className="flex items-center gap-3 justify-center hover:underline"
+          >
+            <FaEnvelope className="text-red-400 text-xl" />
+            <span className="font-medium text-xl underline">kana.jaya@gmail.com</span>
+          </a>
+
+          {/* Alamat */}
+          <div className="flex items-center gap-3 justify-center">
+            <FaMapMarkerAlt className="text-green-400 text-xl" />
+            <span className="font-medium text-xl">Resinda blok D3 no 5 Karawang</span>
+          </div>
         </div>
       </motion.div>
     </div>

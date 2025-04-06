@@ -129,18 +129,18 @@ const posts = [
                   />
                 </div>
                 <div className="group relative">
-                  <h3 className="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
+                  <h3 className="mt-3 text-lg/6 text-center font-semibold text-gray-900 group-hover:text-gray-600">
                     <Link href={`/layanan-kami#${post.id}`}>
-                      <span className="absolute inset-0 text-center" />
+                      <span className="absolute inset-0" />
                       {post.title}
                     </Link>
                   </h3>
-                  <p className="mt-3 text-base/6 text-black">
+                  <p className="mt-3 text-base/6 text-black text-center">
                     {post.description}
                   </p>
                   <Link
                     href={`/layanan-kami#${post.id}`}
-                    className="mt-4 inline-block rounded-md bg-blue-600 px-4 py-2 text-white text-sm hover:bg-blue-700 transition"
+                    className="mt-4 ml-[75px] xl:ml-[95px] inline-block rounded-md bg-blue-600 px-4 py-2 text-white text-sm hover:bg-blue-700 transition"
                   >
                     Pelajari Selengkapnya
                   </Link>

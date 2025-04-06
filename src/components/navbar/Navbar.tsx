@@ -28,14 +28,17 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      setIsScrolled(scrollTop > 50);
-      setShowContactInfo(scrollTop <= 50);
+      setIsScrolled(scrollTop > 50 || pathname === "/proyek");
+      setShowContactInfo(scrollTop <= 50 && pathname !== "/proyek");
     };
-
+  
+    // Jalankan sekali waktu pertama render
+    handleScroll();
+  
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
+  }, [pathname]);
+  
   return (
     <>
       {/* Navbar */}

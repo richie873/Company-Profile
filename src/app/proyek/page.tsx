@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/landingPage/Footer";
-import ContentSection from "@/components/landingPage/ContentSection";
+import Proyek from "@/components/proyek/proyek";
 
 export default function TentangKami() {
   // Scroll ke atas saat halaman dimuat
@@ -13,12 +13,7 @@ export default function TentangKami() {
   return (
     <div className="bg-stone-50">
       <Navbar />
-
-      <div className="p-8 bg-blue-500">
-        <h1 className="text-2xl font-bold">Tentang Kami</h1>
-        <p>Ini adalah halaman tentang kami.</p>
-      </div>
-      <ContentSection />
+      <Proyek />
       <Footer />
     </div>
   );
