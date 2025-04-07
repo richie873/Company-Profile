@@ -200,7 +200,7 @@ export default function Example() {
               </div>
 
               <div className="mt-3 text-center">
-                <span className="block text-gray-700 text-base font-medium">
+                <span className="block text-gray-700 font-semibold text-base">
                   {post.description}
                 </span>
               </div>
@@ -229,7 +229,7 @@ export default function Example() {
             {/* <h3 className="mt-4 text-xl font-semibold text-gray-900">
               {selectedProject.title}
             </h3> */}
-            <p className="mt-2 text-gray-600">{selectedProject.description}</p>
+            <p className="mt-2 text-gray-600 font-semibold text-center">{selectedProject.description}</p>
             <button
               onClick={() => setSelectedProject(null)}
               className="mt-4 px-4 py-2 ml-[135px] md:ml-[140px] lg:ml-[160px] xl:ml-[165px] bg-red-600 text-white rounded hover:bg-red-700 transition"

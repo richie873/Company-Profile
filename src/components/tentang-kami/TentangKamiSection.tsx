@@ -16,10 +16,10 @@ export default function ContentSection() {
         viewport={{ once: true }}
       >
         <div className="ml-4 sm:ml-6 mr-4 sm:mr-6 text-justify">
-          <h1 className="text-lg sm:text-2xl font-semibold text-gray-900 mb-4">
+          <h1 className="text-lg sm:text-2xl font-semibold !text-gray-900 mb-4">
             SEJARAH PT. KANA JAYA
           </h1>
-          <div className="space-y-4 text-sm sm:text-base leading-8 lg:text-lg">
+          <div className="space-y-4 text-sm sm:text-base !text-gray-900 leading-8 lg:text-lg">
             <p>
               PT Kana Jaya awalnya merupakan perusahaan dagang yang bergerak di
               bidang penyediaan barang dan jasa konstruksi, seperti aluminium,

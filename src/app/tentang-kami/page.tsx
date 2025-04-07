@@ -15,7 +15,7 @@ export default function TentangKami() {
   return (
     <div className="bg-stone-50">
       <Navbar />
-      
+
       {/* Hero Section */}
       <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px]">
         <Image
@@ -27,12 +27,17 @@ export default function TentangKami() {
         />
         {/* Overlay */}
         <div className="absolute inset-0 bg-black opacity-50"></div>
+
         {/* Teks Hero */}
-        <div className="absolute inset-0 flex flex-col leading-normal capitalize items-start justify-center text-white text-left px-6 sm:px-12">
+        <div className="absolute inset-0 mt-[50px] lg:mt-[20px] flex flex-col leading-normal capitalize items-center justify-center text-white text-center px-6 sm:px-12">
+          {/* Judul Utama */}
           <span className="text-xl sm:text-2xl md:text-4xl font-bold">
-            Kami aplikator dan pengadaan material untuk <br className="hidden sm:block" />
-            Plafon, Partisi, Stainless Steel, Cover Stainless Steel <br className="hidden sm:block" />
-            Curtain Wall, Aluminium Composite Panel <br />
+            Kami aplikator untuk segala kebutuhan anda
+          </span>
+          {/* Deskripsi Kecil */}
+          <span className="mt-3 text-sm sm:text-base md:text-lg font-normal opacity-90">
+            Plafon, Partisi, Stainless Steel, Cover Stainless Steel, Curtain Wall, Aluminium Composite Panel
+            <br />
             Dan Berbagai Jenis Tempered Laminate
           </span>
         </div>

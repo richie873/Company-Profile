@@ -36,7 +36,7 @@ export default function ContentSection() {
           onClick={() => setShowTooltip(!showTooltip)}
         >
           <Image
-            src="/images/porto/PabrikKopiKapalApi.jpeg"
+            src="/images/porto/proyek/PabrikKopiKapalApi.jpeg"
             alt="Pabrik Kopi Kapal Api - Balaraja Tangerang"
             title="Pabrik Kopi Kapal Api - Balaraja Tangerang"
             width={800}
