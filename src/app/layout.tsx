@@ -1,6 +1,8 @@
+// app/layout.tsx (TETAP server component)
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import ThemeWrapper from "@/components/theme/ThemeWrapper" // kita buat komponen baru untuk handle dark mode
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,14 +14,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const viewport = {
-  width: "device-width",
-  initialScale: 1,
-};
-
 export const metadata: Metadata = {
-  title: "PT Kana Jaya | Konstruksi Composite, Panel, Partisi, Gypsum, Plafon, dan Baja Ringan",
-  description: "Konstruksi Composite, Panel, Partisi, Gypsum, Plafon, dan Baja Ringan",
+  title: "PT Kana Jaya | Konstruksi Plafon, Partisi, Stainless Steel, Cover Stainless Steel, Curtain Wall, Aluminium Composite Panel Dan Berbagai Jenis Tempered Laminate",
+  description: "Konstruksi Plafon, Partisi, Stainless Steel, Cover Stainless Steel, Curtain Wall, Aluminium Composite Panel Dan Berbagai Jenis Tempered Laminate",
 };
 
 export default function RootLayout({
@@ -28,11 +25,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id">
+    <html lang="id" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-black dark:bg-[#0a0a0a] dark:text-white`}
       >
-        {children}
+        <ThemeWrapper>{children}</ThemeWrapper>
       </body>
     </html>
   );

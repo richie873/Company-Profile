@@ -94,7 +94,10 @@ export default function ClientsSection() {
                   variants={itemVariants}
                   className="relative flex flex-col items-center h-[150px]" // Tetapkan tinggi tetap
                 >
-                  <div onClick={(e) => toggleTooltip(uniqueIndex, e)} className="cursor-pointer">
+                  <div
+                    onClick={(e) => toggleTooltip(uniqueIndex, e)}
+                    className="cursor-pointer"
+                  >
                     <Image
                       src={logo.src}
                       alt={logo.alt}
@@ -115,11 +118,12 @@ export default function ClientsSection() {
                       className="absolute bottom-full left-1/2 transform -translate-x-1/2 translate-y-[-8px] bg-gray-900 text-white text-sm px-3 py-2 rounded-lg shadow-lg"
                     >
                       {logo.alt}
-                      <div className="absolute left-1/2 -bottom-[6px] -translate-x-1/2 w-0 h-0 
+                      <div
+                        className="absolute left-1/2 -bottom-[6px] -translate-x-1/2 w-0 h-0 
                         border-l-[6px] border-l-transparent 
                         border-r-[6px] border-r-transparent 
-                        border-t-[6px] border-t-gray-900">
-                      </div>
+                        border-t-[6px] border-t-gray-900"
+                      ></div>
                     </motion.div>
                   )}
                 </motion.div>

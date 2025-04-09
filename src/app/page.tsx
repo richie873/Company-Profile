@@ -1,52 +1,28 @@
-"use client";
-import { useEffect } from "react";
-import Head from "next/head";
-import Navbar from "@/components/navbar/Navbar";
-import ImageSlider from "@/components/navbar/ImageSlider";
-import ContentSection from "@/components/landingPage/ContentSection";
-import LogoClouds from "@/components/landingPage/LogoClouds";
-import ValuesSection from "@/components/landingPage/ValuesSection";
-import PortoSection from "@/components/landingPage/PortoSection";
-import Footer from "@/components/landingPage/Footer";
-import CardStatistik from "@/components/landingPage/CardStatistik";
-import LayananKami from "@/components/landingPage/LayananKami";
+// app/page.tsx
+import { Metadata } from "next";
+import LandingContent from "@/components/landingPage/LandingContent";
+
+export const metadata: Metadata = {
+  title: "PT Kana Jaya | Spesialis Aluminium, Kaca, ACP, dan Plafon",
+  description:
+    "PT Kana Jaya adalah aplikator profesional dan penyedia material terpercaya untuk aluminium, kaca, ACP, dan plafon. Lihat layanan dan portofolio kami.",
+  robots: "index, follow",
+  openGraph: {
+    title: "PT Kana Jaya | Spesialis Aluminium, Kaca, ACP, dan Plafon",
+    description:
+      "PT Kana Jaya adalah aplikator profesional dan penyedia material terpercaya untuk aluminium, kaca, ACP, dan plafon.",
+    url: "https://kanajaya.co.id",
+    images: [
+      {
+        url: "https://kanajaya.co.id/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "PT Kana Jaya",
+      },
+    ],
+  },
+};
 
 export default function LandingPage() {
-  // Scroll ke atas saat halaman dimuat
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  return (
-    <div className="bg-stone-50">
-      <Navbar />
-
-      <Head>
-        <title>Image Slider</title>
-        <meta
-          name="description"
-          content="Image slider example with Next.js, Tailwind CSS, dan TypeScript"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className="flex min-h-screen flex-col items-center justify-center py-2">
-        <ImageSlider />
-      </main>
-
-      <div className="relative isolate w-full">
-        <div className="bg-stone-50 py-6 sm:py-8">
-          <div className="w-full px-5 lg:px-5">
-            <ContentSection />
-            <CardStatistik />
-            <ValuesSection />
-            <LogoClouds />
-            <PortoSection />
-            <LayananKami />
-          </div>
-        </div>
-      </div>
-      <Footer />
-    </div>
-  );
+  return <LandingContent />;
 }

@@ -11,7 +11,7 @@ export default function TentangKami() {
   }, []);
 
   return (
-    <div className="bg-stone-50">
+    <div className="bg-stone-50 dark:bg-gray-900">
       <Navbar />
       <Proyek />
       <Footer />

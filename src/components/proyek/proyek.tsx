@@ -154,7 +154,7 @@ export default function Example() {
           viewport={{ once: true }}
           className="mx-auto max-w-4xl"
         >
-          <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+          <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl dark:text-white">
             Proyek Kami
           </h2>
         </motion.div>
@@ -200,7 +200,7 @@ export default function Example() {
               </div>
 
               <div className="mt-3 text-center">
-                <span className="block text-gray-700 font-semibold text-base">
+                <span className="block text-gray-700 font-semibold text-base dark:text-white">
                   {post.description}
                 </span>
               </div>

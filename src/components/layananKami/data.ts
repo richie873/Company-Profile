@@ -2,133 +2,144 @@ export const layanan = [
   {
     id: 1,
     title: "Pintu dan Jendela Aluminium Modern",
-    description: "Spesialis pemasangan pintu dan jendela aluminium untuk rumah, kantor, dan bangunan komersial.",
+    description: "Spesialis pengadaan dan pemasangan pintu serta jendela aluminium yang tahan lama dan elegan.",
     imageUrl: "/images/layananKami/PintuJendelaAluminium.jpg",
-    content: "Kami menyediakan solusi pemasangan pintu dan jendela berbahan aluminium yang tahan karat, minimalis, dan tahan lama. Cocok untuk rumah, kantor, gedung bertingkat, hingga pertokoan.",
+    content:
+      "PT Kana Jaya menyediakan solusi lengkap untuk pemasangan pintu dan jendela berbahan aluminium. Cocok untuk rumah tinggal, gedung perkantoran, hingga bangunan komersial. Produk kami tahan karat, tampil modern, dan minim perawatan.",
     features: [
       "Material aluminium premium",
       "Desain modern dan minimalis",
-      "Anti karat dan mudah perawatan"
+      "Anti karat dan mudah perawatan",
     ],
   },
   {
     id: 2,
     title: "Kaca Tempered, Laminated, dan Kaca Hias",
-    description: "Jasa pemasangan kaca berkualitas untuk interior dan eksterior bangunan.",
+    description: "Pengadaan dan pemasangan berbagai jenis kaca dekoratif dan fungsional untuk bangunan.",
     imageUrl: "/images/layananKami/kaca.jpg",
-    content: "Layanan pengadaan dan instalasi kaca tempered, kaca laminated, dan kaca dekoratif untuk hunian, perkantoran, dan komersial. Aman, kuat, dan estetis.",
+    content:
+      "Kami menyediakan kaca tempered, kaca laminated, serta kaca dekoratif untuk keperluan interior dan eksterior. PT Kana Jaya siap menangani proyek hunian, kantor, hingga komersial dengan kualitas dan estetika terbaik.",
     features: [
       "Kaca tempered dan laminated",
       "Kaca partisi, jendela, dan pintu",
-      "Estetika dan keamanan terjamin"
+      "Estetika dan keamanan terjamin",
     ],
   },
   {
     id: 3,
-    title: "Pemasangan Aluminium Composite Panel (ACP)",
-    description: "Layanan ACP untuk tampilan fasad bangunan modern dan tahan lama.",
+    title: "(ACP) Pemasangan Aluminium Composite Panel",
+    description: "Solusi ACP berkualitas untuk fasad dan interior gedung yang modern dan tahan lama.",
     imageUrl: "/images/layananKami/aluminiumCompositePanel.webp",
-    content: "Pemasangan Aluminium Composite Panel untuk gedung, showroom, toko, hingga interior. Tampilan elegan, kuat terhadap cuaca, dan cepat dipasang.",
+    content:
+      "PT Kana Jaya melayani pengadaan dan pemasangan Aluminium Composite Panel (ACP) untuk fasad bangunan, showroom, ruko, hingga interior. Produk kami tampil elegan, tahan cuaca, dan mudah dibentuk.",
     features: [
       "Ringan dan tahan lama",
       "Pilihan warna dan tekstur beragam",
-      "Instalasi cepat dan rapi"
+      "Instalasi cepat dan rapi",
     ],
   },
   {
     id: 4,
     title: "Plafon Gypsum, PVC, dan Akustik",
-    description: "Jasa pemasangan plafon modern untuk hunian dan komersial.",
+    description: "Solusi plafon modern dari PT Kana Jaya untuk tampilan ruangan yang estetis dan fungsional.",
     imageUrl: "/images/layananKami/plafon.jpg",
-    content: "Menyediakan plafon dari bahan gypsum, PVC, dan akustik yang cocok untuk rumah, kantor, dan ruang publik. Estetis dan peredam suara.",
+    content:
+      "Kami menyediakan dan mengaplikasikan plafon dari bahan gypsum, PVC, dan akustik. Cocok untuk rumah, perkantoran, dan ruang publik dengan kebutuhan desain dan akustik yang spesifik. Proses pemasangan dilakukan oleh tim profesional dengan hasil rapi dan tahan lama.",
     features: [
-      "Model plafon variatif",
-      "Material tahan lama",
-      "Pemasangan cepat dan rapi"
+      "Ragam pilihan desain plafon",
+      "Material tahan lama dan ringan",
+      "Pemasangan cepat dan presisi",
     ],
   },
   {
     id: 5,
-    title: "Partisi Ruangan: Kaca, Gypsum, dan Movable Wall",
-    description: "Solusi partisi fleksibel dan estetis untuk ruangan kantor dan rumah.",
+    title: "Partisi Ruangan Kaca, Gypsum, dan Movable Wall",
+    description: "Solusi partisi ruangan fungsional dan elegan sesuai kebutuhan layout ruang.",
     imageUrl: "/images/layananKami/partisi.png",
-    content: "Kami menyediakan berbagai jenis partisi ruangan seperti kaca, gypsum, hingga movable wall. Membantu membagi ruang tanpa renovasi besar.",
+    content:
+      "Kami melayani pengadaan dan pemasangan partisi ruangan berbahan kaca, gypsum, hingga movable wall. Ideal untuk kantor, rumah, dan area komersial yang memerlukan fleksibilitas ruang tanpa konstruksi besar.",
     features: [
-      "Desain kustom",
-      "Privasi dan fleksibilitas",
-      "Instalasi profesional"
+      "Material partisi lengkap dan berkualitas",
+      "Desain menyesuaikan kebutuhan",
+      "Proses instalasi cepat dan profesional",
     ],
   },
   {
     id: 6,
     title: "Curtain Wall Facade Gedung",
-    description: "Spesialis curtain wall aluminium dan kaca untuk tampilan gedung mewah dan modern.",
+    description: "Tingkatkan tampilan gedung Anda dengan curtain wall dari kaca dan aluminium berkualitas tinggi.",
     imageUrl: "/images/layananKami/curtainWallFacade.png",
-    content: "Curtain wall facade memberikan tampilan elegan dan profesional untuk gedung tinggi. Sistem dinding luar yang tahan cuaca dan berkelas.",
+    content:
+      "Sebagai aplikator dan penyedia material curtain wall, PT Kana Jaya memberikan solusi facade modern dengan kombinasi kaca dan aluminium yang kuat, kedap suara, dan tahan cuaca. Cocok untuk gedung perkantoran, hotel, dan pusat perbelanjaan.",
     features: [
-      "Sistem kaca dan aluminium",
-      "Efisien energi dan kedap suara",
-      "Tahan cuaca ekstrem"
+      "Sistem facade elegan dan modern",
+      "Efisiensi energi dan pencahayaan alami",
+      "Struktur kuat dan tahan lama",
     ],
   },
   {
     id: 7,
-    title: "Konstruksi Rangka Baja",
-    description: "Layanan konstruksi baja untuk gudang, pabrik, gedung bertingkat, dan proyek skala besar.",
+    title: "Aplikator Konstruksi Rangka Baja",
+    description: "PT Kana Jaya menyediakan layanan konstruksi baja untuk kebutuhan bangunan skala besar.",
     imageUrl: "/images/layananKami/baja.jpg",
-    content: "Kami melayani konstruksi baja ringan dan berat, dengan teknik presisi dan struktur yang kuat. Cocok untuk industri dan komersial.",
+    content:
+      "Kami melayani proyek konstruksi rangka baja ringan maupun berat. Material berkualitas tinggi dan pengerjaan presisi menjadikan solusi ini ideal untuk gudang, pabrik, dan bangunan komersial lainnya.",
     features: [
-      "Struktur baja kokoh",
-      "Proses cepat dan akurat",
-      "Dikerjakan tim profesional"
+      "Baja bersertifikasi dan kuat",
+      "Perakitan efisien dan tepat waktu",
+      "Dikerjakan oleh tenaga ahli berpengalaman",
     ],
   },
   {
     id: 8,
     title: "Pembangunan Rumah dan Renovasi",
-    description: "Layanan bangun rumah dari nol, renovasi, dan pembangunan cluster perumahan.",
+    description: "Bangun dan renovasi rumah dengan solusi lengkap dari PT Kana Jaya dari material hingga pengerjaan.",
     imageUrl: "/images/layananKami/pembangunanRumah.webp",
-    content: "Bangun rumah impian Anda bersama tim arsitek dan konstruksi profesional. Legalitas aman, proses rapi, dan material terpercaya.",
+    content:
+      "PT Kana Jaya siap membantu Anda membangun atau merenovasi rumah secara menyeluruh. Dengan dukungan arsitek dan tim konstruksi internal, kami pastikan setiap detail sesuai dengan kebutuhan dan gaya Anda.",
     features: [
-      "Desain arsitektur custom",
-      "Sesuai anggaran dan keinginan",
-      "Bisa KPR dan non-KPR"
+      "Desain arsitektur menyesuaikan keinginan",
+      "Material dan pengerjaan satu pintu",
+      "Proyek ditangani profesional dari awal hingga selesai",
     ],
   },
   {
     id: 9,
     title: "Jasa Pembangunan Gudang",
-    description: "Spesialis pembangunan gudang industri, logistik, dan komersial.",
+    description: "Solusi pembangunan gudang industri dan komersial dengan struktur kuat dan efisien.",
     imageUrl: "/images/layananKami/pergudangan.jpg",
-    content: "Kami membangun gudang yang efisien dan fungsional dengan rangka baja dan dinding insulasi. Solusi terbaik untuk usaha Anda.",
+    content:
+      "PT Kana Jaya melayani pengadaan material dan pembangunan gudang menggunakan rangka baja dan sistem insulasi. Proses cepat dan desain disesuaikan dengan kebutuhan penyimpanan atau produksi Anda.",
     features: [
-      "Desain sesuai kebutuhan",
-      "Konstruksi cepat dan presisi",
-      "Struktur kuat dan tahan lama"
+      "Rangka baja berkualitas tinggi",
+      "Desain sesuai alur kerja industri",
+      "Proses konstruksi efisien",
     ],
   },
   {
     id: 10,
     title: "Pembuatan Jalan Aspal dan Beton",
-    description: "Layanan konstruksi jalan lingkungan, akses pabrik, dan jalan utama.",
+    description: "Layanan pengaspalan dan pengecoran jalan dari PT Kana Jaya, lengkap dari awal hingga finishing.",
     imageUrl: "/images/layananKami/pembuatanJalan.jpg",
-    content: "Kami menyediakan jasa pembuatan jalan dengan aspal hotmix dan beton mutu tinggi. Lengkap dengan alat berat dan tim ahli.",
+    content:
+      "Kami menyediakan jasa pembuatan jalan dengan bahan aspal hotmix maupun beton berkualitas. Didukung dengan peralatan lengkap dan tim ahli, hasil jalan akan rapi, awet, dan tahan beban berat.",
     features: [
-      "Leveling dan pemadatan lahan",
-      "Aspal atau beton kuat dan awet",
-      "Proses cepat dan terkontrol"
+      "Persiapan lahan dan perataan",
+      "Material jalan kuat dan tahan lama",
+      "Eksekusi cepat dan tepat",
     ],
   },
   {
     id: 11,
     title: "Pembuatan Saluran Irigasi",
-    description: "Layanan konstruksi saluran irigasi untuk pertanian, perumahan, dan kawasan industri.",
+    description: "Layanan pembangunan saluran irigasi yang presisi dan tahan lama untuk berbagai sektor.",
     imageUrl: "/images/layananKami/saluranIrigasinew.jpg",
-    content: "Kami membangun saluran irigasi tahan bocor dan tahan lama, sesuai kontur tanah dan kebutuhan aliran air.",
+    content:
+      "PT Kana Jaya merancang dan membangun saluran irigasi berbahan beton berkualitas untuk kebutuhan pertanian, perumahan, maupun kawasan industri. Kami memastikan aliran air lancar dan struktur tahan terhadap tekanan serta erosi.",
     features: [
-      "Struktur kokoh dan presisi",
-      "Tahan terhadap tekanan air",
-      "Efisien untuk lahan pertanian dan industri"
+      "Struktur saluran presisi",
+      "Tahan lama dan anti bocor",
+      "Cocok untuk berbagai kebutuhan lahan",
     ],
   },
 ];

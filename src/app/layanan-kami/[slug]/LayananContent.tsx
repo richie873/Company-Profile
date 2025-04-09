@@ -8,13 +8,15 @@ export default async function LayananContent({ slug }: { slug: string }) {
   if (!layananDetail) return notFound();
 
   return (
-    <div className="grid lg:grid-cols-[250px_1fr] mt-[50px] lg:mt-[70px]">
-      {/* Sidebar */}
-      <SidebarWithMotion slug={slug} />
+    <div className="bg-stone-50 dark:bg-gray-900">
+      <div className="grid lg:grid-cols-[250px_1fr] mt-[50px] lg:mt-[70px]">
+        {/* Sidebar */}
+        <SidebarWithMotion slug={slug} />
 
-      {/* Konten */}
-      <div className="pt-5 lg:pt-6 px-4 lg:px-8 mt-[20px] mb-[40px]">
-        <LayananAnimatedContent layanan={layananDetail} />
+        {/* Konten */}
+        <div className="pt-5 lg:pt-6 px-4 lg:px-8 mt-[20px] mb-[40px]">
+          <LayananAnimatedContent layanan={layananDetail} />
+        </div>
       </div>
     </div>
   );

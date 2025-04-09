@@ -64,10 +64,10 @@ export default function ContentSection() {
         {posts.map((post) => {
           return (
             <article key={post.id} className="w-full">
-              <h3 className="mt-3 text-3xl font-semibold text-gray-900">
+              <h3 className="mt-3 text-3xl font-semibold text-gray-900 dark:text-white">
                 <span>{post.title}</span>
               </h3>
-              <p className="text-base text-gray-800 text-justify whitespace-pre-line mt-[15px]">
+              <p className="text-base text-gray-800 text-justify whitespace-pre-line mt-[15px] dark:text-white">
                 {post.description}
               </p>
             </article>

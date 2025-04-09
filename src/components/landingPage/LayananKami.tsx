@@ -5,13 +5,13 @@ import { layanan } from "@/components/layananKami/data";
 
 export default function Example() {
   return (
-    <div className="bg-white py-12 sm:py-16 mt-[30px]">
+    <div className="bg-white py-12 sm:py-16 mt-[30px] dark:bg-gray-900">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-screen">
-          <h2 className="text-2xl font-semibold tracking-tight text-center text-pretty text-gray-900 sm:text-4xl">
+          <h2 className="text-2xl drak:text-white dark:text-white font-semibold tracking-tight text-center text-pretty text-gray-900 sm:text-4xl">
             Kami Mengerjakan dan Menyediakan Segala Kebutuhan Anda
           </h2>
-          <p className="text-center mt-[10px] text-xl text-gray-500">
+          <p className="text-center mt-[10px] dark:text-gray-400 text-xl text-gray-500">
             Pekerja Berkualitas & Produk Berkualitas
           </p>
         </div>

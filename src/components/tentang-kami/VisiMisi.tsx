@@ -38,8 +38,8 @@ const StatisticCard = ({
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="flex w-full flex-col gap-y-3 sm:gap-y-4 items-start text-justify"
     >
-      <dt className="text-gray-950 text-lg sm:text-xl font-semibold">{name}</dt>
-      <dd className="text-gray-900 leading-snug whitespace-pre-line text-sm sm:text-base md:text-lg lg:text-base">
+      <dt className="text-gray-950 text-lg sm:text-xl font-semibold dark:text-white">{name}</dt>
+      <dd className="text-gray-900 leading-snug whitespace-pre-line text-sm sm:text-base md:text-lg lg:text-base dark:text-white">
         {description}
       </dd>
     </motion.div>
@@ -48,7 +48,7 @@ const StatisticCard = ({
 
 export default function ContentSection() {
   return (
-    <div className="px-4 sm:px-6 md:px-8 mt-6 mb-8 bg-stone-100">
+    <div className="px-4 sm:px-6 md:px-8 mt-6 mb-8 bg-stone-100 dark:bg-gray-900">
       {/* Visi dan Misi */}
       <dl className="grid grid-cols-1 lg:grid-cols-2 gap-x-6 sm:gap-x-8 gap-y-12 sm:gap-y-16 text-left">
         {stats.map((stat) => (

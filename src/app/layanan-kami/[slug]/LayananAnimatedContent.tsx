@@ -22,7 +22,7 @@ export default function LayananAnimatedContent({ layanan }: Props) {
       transition={{ duration: 0.5, ease: "easeOut" }}
       className="max-w-4xl mx-auto"
     >
-      <h1 className="text-3xl font-bold text-center mb-4">{layanan.title}</h1>
+      <h1 className="text-3xl font-bold text-center mb-4 dark:text-white">{layanan.title}</h1>
       <Image
         src={layanan.imageUrl}
         alt={layanan.title}
@@ -30,14 +30,14 @@ export default function LayananAnimatedContent({ layanan }: Props) {
         height={300}
         className="rounded-lg mb-4 object-contain mx-auto max-w-sm"
       />
-      <p className="text-gray-700 ml-[10px] text-lg">{layanan.description}</p>
+      <p className="text-gray-900 ml-[10px] text-lg dark:text-white">{layanan.description}</p>
 
       {layanan.content && (
-        <p className="mt-4 text-gray-600 ml-[10px]">{layanan.content}</p>
+        <p className="mt-4 text-gray-900 ml-[10px] dark:text-white">{layanan.content}</p>
       )}
 
       {layanan.features && (
-        <ul className="mt-4 list-disc ml-[10px] list-inside text-gray-600">
+        <ul className="mt-4 list-disc ml-[10px] list-inside text-gray-900 dark:text-white">
           {layanan.features.map((feature, index) => (
             <li key={index}>{feature}</li>
           ))}

@@ -57,7 +57,7 @@ export default function Example() {
   const router = useRouter();
 
   return (
-    <div className="bg-white pt-16 pb-10 sm:pt-20 sm:pb-12 md:pt-24 md:pb-16">
+    <div className="bg-white dark:bg-gray-900 pt-16 pb-10 sm:pt-20 sm:pb-12 md:pt-24 md:pb-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
         <motion.div
           initial={{ opacity: 0 }}
@@ -66,7 +66,7 @@ export default function Example() {
           viewport={{ once: true }}
           className="mx-auto max-w-4xl"
         >
-          <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+          <h2 className="text-4xl font-semibold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
             Proyek Kami
           </h2>
         </motion.div>
@@ -112,7 +112,7 @@ export default function Example() {
               </div>
 
               <div className="mt-3 text-center">
-                <span className="block text-gray-700 text-base font-medium">
+                <span className="block text-gray-700 text-base font-medium dark:text-white">
                   {post.description}
                 </span>
               </div>

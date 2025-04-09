@@ -15,8 +15,8 @@ export default function ValuesSection() {
   ];  
 
   return (
-    <div className="bg-stone-50 py-10 px-6 lg:px-8 mt-[55px]">
-      <h2 className="text-3xl font-bold text-gray-900 text-center mb-15">Nilai-Nilai Utama PT Kana Jaya</h2>
+    <div className="bg-stone-50 dark:bg-gray-900 py-10 px-6 lg:px-8 mt-[55px]">
+      <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-15">Nilai-Nilai Utama PT Kana Jaya</h2>
       <motion.div 
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         initial={{ opacity: 0, y: 30 }}
@@ -27,7 +27,7 @@ export default function ValuesSection() {
         {values.map((value, index) => (
           <motion.div 
             key={index} 
-            className="bg-white p-4 rounded-lg shadow"
+            className="bg-white dark:bg-white text-gray-800 p-4 rounded-lg shadow dark:shadow-lg dark:ring-1 dark:ring-gray-700"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
           >
