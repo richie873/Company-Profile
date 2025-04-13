@@ -9,7 +9,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const images = [
   {
     src: "/images/porto/portoImageSlider/RSUDKarawang.jpg",
-    text: ["Selamat Datang di Kana Jaya", "Aplikator Aluminium, Kaca, ACP, Gypsum, Baja dan Stainless steel", "Untuk Konstruksi Modern & Elegan"],
+    text: ["Selamat Datang di Kana Jaya", "Aplikator Aluminium, Kaca, ACP, Gypsum, Baja dan Stainless Steel", "Untuk Konstruksi Modern & Elegan"],
   },
   {
     src: "/images/porto/portoImageSlider/BPJSKetenagakerjaanKlariKarawang.png",
