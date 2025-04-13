@@ -15,9 +15,35 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PT Kana Jaya | Aplikator Spesialis Aluminium, Gypsum, Baja, Plafon, Partisi, Stainless Steel, Curtain Wall, Aluminium Composite Panel Dan Berbagai Jenis Tempered Laminate",
+  metadataBase: new URL("https://kanajaya.co.id"),
+  title:
+    "PT Kana Jaya | Aplikator Spesialis Aluminium, Gypsum, Baja, Plafon, Partisi, Stainless Steel, Curtain Wall, Aluminium Composite Panel Dan Berbagai Jenis Tempered Laminate",
   description:
-  "PT Kana Jaya adalah Aplikator profesional dan penyedia material terpercaya untuk Aluminium, Kaca, ACP, Gypsum, Baja dan Stainless Steel.",
+    "PT Kana Jaya adalah Aplikator profesional dan penyedia material terpercaya untuk Aluminium, Kaca, ACP, Gypsum, Baja dan Stainless Steel.",
+  openGraph: {
+    type: "website",
+    url: "https://kanajaya.co.id",
+    title:
+      "PT Kana Jaya | Aplikator Spesialis Aluminium, Gypsum, Baja, Plafon, Partisi, Stainless Steel, Curtain Wall, Aluminium Composite Panel",
+    description:
+      "PT Kana Jaya adalah Aplikator profesional dan penyedia material terpercaya untuk Aluminium, Kaca, ACP, Gypsum, Baja dan Stainless Steel.",
+    siteName: "PT Kana Jaya",
+    images: [
+      {
+        url: "https://kanajaya.co.id/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "PT Kana Jaya",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "PT Kana Jaya",
+    description:
+      "Aplikator Spesialis Aluminium, Gypsum, Baja, Plafon, Partisi, dan lainnya.",
+    images: ["https://kanajaya.co.id/og-image.png"],
+  },
 };
 
 export default function RootLayout({
@@ -32,37 +58,6 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
 
-        {/* Open Graph (Facebook, WhatsApp, LinkedIn) */}
-        <meta
-          property="og:title"
-          content="PT Kana Jaya | Aplikator Spesialis Aluminium, Gypsum, Baja, Plafon, Partisi, Stainless Steel, Curtain Wall, Aluminium Composite Panel"
-        />
-        <meta
-          property="og:description"
-          content="PT Kana Jaya adalah Aplikator profesional dan penyedia material terpercaya untuk Aluminium, Kaca, ACP, Gypsum, Baja dan Stainless Steel."
-        />
-        <meta
-          property="og:image"
-          content="https://kanajaya.co.id/og-image.png"
-        />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:url" content="https://kanajaya.co.id" />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="PT Kana Jaya" />
-        <meta
-          name="twitter:description"
-          content="Aplikator Spesialis Aluminium, Gypsum, Baja, Plafon, Partisi, dan lainnya."
-        />
-        <meta
-          name="twitter:image"
-          content="https://kanajaya.co.id/og-image.png"
-        />
-
-        {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
