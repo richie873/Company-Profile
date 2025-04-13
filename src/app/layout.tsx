@@ -28,10 +28,41 @@ export default function RootLayout({
   return (
     <html lang="id" className="scroll-smooth">
       <head>
-        {/* Tambahkan di sini */}
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
+
+        {/* Open Graph (Facebook, WhatsApp, LinkedIn) */}
+        <meta
+          property="og:title"
+          content="PT Kana Jaya | Aplikator Spesialis Aluminium, Gypsum, Baja, Plafon, Partisi, Stainless Steel, Curtain Wall, Aluminium Composite Panel"
+        />
+        <meta
+          property="og:description"
+          content="PT Kana Jaya adalah Aplikator profesional dan penyedia material terpercaya untuk Aluminium, Kaca, ACP, Gypsum, Baja dan Stainless Steel."
+        />
+        <meta
+          property="og:image"
+          content="https://kanajaya.co.id/og-image.png"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:url" content="https://kanajaya.co.id" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="PT Kana Jaya" />
+        <meta
+          name="twitter:description"
+          content="Aplikator Spesialis Aluminium, Gypsum, Baja, Plafon, Partisi, dan lainnya."
+        />
+        <meta
+          name="twitter:image"
+          content="https://kanajaya.co.id/og-image.png"
+        />
+
+        {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -41,9 +72,7 @@ export default function RootLayout({
               name: "PT Kana Jaya",
               url: "https://kanajaya.co.id",
               logo: "https://kanajaya.co.id/apple-touch-icon.png",
-              sameAs: [
-                "https://kanajaya.co.id",
-              ],
+              sameAs: ["https://kanajaya.co.id"],
             }),
           }}
         />
