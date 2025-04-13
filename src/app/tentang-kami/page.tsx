@@ -21,8 +21,7 @@ export default function TentangKami() {
         <Image
           src="/images/porto/proyek/PabrikKopiKapalApi.jpeg"
           alt="Jasa Curtainwall ACP"
-          layout="fill" // Membuat gambar mengisi seluruh div
-          objectFit="cover" // Mengatur gambar agar menutupi seluruh area tanpa distorsi
+          fill // Membuat gambar mengisi seluruh div
           className="object-cover"
         />
         {/* Overlay */}

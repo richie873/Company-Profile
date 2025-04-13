@@ -57,8 +57,7 @@ export default function ContentSection() {
         src="/images/porto/portoImageSlider/RSUDKarawang.jpg"
         alt="Proyek Konstruksi"
         title="Proyek Konstruksi"
-        layout="fill" // Memastikan gambar memenuhi parent
-        objectFit="cover" // Mengisi area tanpa distorsi
+        fill // Memastikan gambar memenuhi parent
         className="absolute inset-0 w-full h-full object-cover"
         priority={false}
       />

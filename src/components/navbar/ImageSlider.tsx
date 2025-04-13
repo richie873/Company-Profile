@@ -55,9 +55,8 @@ export default function ImageSlider(): React.JSX.Element {
         <Image
           src={images[currentIndex].src}
           alt={`Slider Image ${currentIndex + 1}`}
-          layout="fill"
-          objectFit="cover"
-          className="w-full h-full"
+          fill
+          className="object-cover w-full h-full"
         />
         {/* Overlay Hitam 50% */}
         <div className="absolute inset-0 bg-black opacity-60"></div>
