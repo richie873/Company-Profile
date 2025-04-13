@@ -3,14 +3,14 @@ import { Metadata } from "next";
 import LandingContent from "@/components/landingPage/LandingContent";
 
 export const metadata: Metadata = {
-  title: "PT Kana Jaya | Spesialis Aluminium, Kaca, ACP, dan Plafon",
+  title: "PT Kana Jaya | Aplikator Spesialis Aluminium, Kaca, ACP, Gypsum, Baja dan Stainless Steel",
   description:
-    "PT Kana Jaya adalah aplikator profesional dan penyedia material terpercaya untuk aluminium, kaca, ACP, dan plafon. Lihat layanan dan portofolio kami.",
+    "PT Kana Jaya adalah Aplikator profesional dan penyedia material terpercaya untuk Aluminium, Kaca, ACP, Gypsum, Baja dan Stainless Steel. Lihat layanan dan portofolio kami.",
   robots: "index, follow",
   openGraph: {
-    title: "PT Kana Jaya | Spesialis Aluminium, Kaca, ACP, dan Plafon",
+    title: "PT Kana Jaya | Aplikator Spesialis Aluminium, Kaca, ACP, Gypsum, Baja dan Stainless Steel",
     description:
-      "PT Kana Jaya adalah aplikator profesional dan penyedia material terpercaya untuk aluminium, kaca, ACP, dan plafon.",
+      "PT Kana Jaya adalah Aplikator profesional dan penyedia material terpercaya untuk Aluminium, Kaca, ACP, Gypsum, Baja dan Stainless Steel.",
     url: "https://kanajaya.co.id",
     images: [
       {

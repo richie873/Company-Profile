@@ -15,8 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PT Kana Jaya | Konstruksi Plafon, Partisi, Stainless Steel, Cover Stainless Steel, Curtain Wall, Aluminium Composite Panel Dan Berbagai Jenis Tempered Laminate",
-  description: "Konstruksi Plafon, Partisi, Stainless Steel, Cover Stainless Steel, Curtain Wall, Aluminium Composite Panel Dan Berbagai Jenis Tempered Laminate",
+  title: "PT Kana Jaya | Aplikator Spesialis Aluminium, Gypsum, Baja, Plafon, Partisi, Stainless Steel, Curtain Wall, Aluminium Composite Panel Dan Berbagai Jenis Tempered Laminate",
+  description:
+  "PT Kana Jaya adalah Aplikator profesional dan penyedia material terpercaya untuk Aluminium, Kaca, ACP, Gypsum, Baja dan Stainless Steel.",
 };
 
 export default function RootLayout({

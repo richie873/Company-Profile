@@ -32,11 +32,12 @@ export default function TentangKami() {
         <div className="absolute inset-0 mt-[50px] lg:mt-[20px] flex flex-col leading-normal capitalize items-center justify-center text-white text-center px-6 sm:px-12">
           {/* Judul Utama */}
           <span className="text-xl sm:text-2xl md:text-4xl font-bold">
-            Kami aplikator untuk segala kebutuhan anda
+            Kami Aplikator untuk segala kebutuhan anda
           </span>
           {/* Deskripsi Kecil */}
           <span className="mt-3 text-sm sm:text-base md:text-lg font-normal opacity-90">
-            Plafon, Partisi, Stainless Steel, Cover Stainless Steel, Curtain Wall, Aluminium Composite Panel
+            Aluminium, ACP, Gypsum, Baja, Plafon, Partisi, Stainless Steel, Curtain
+            Wall
             <br />
             Dan Berbagai Jenis Tempered Laminate
           </span>
