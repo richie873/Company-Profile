@@ -11,6 +11,8 @@ import PortoSection from "@/components/landingPage/PortoSection";
 import Footer from "@/components/landingPage/Footer";
 import CardStatistik from "@/components/landingPage/CardStatistik";
 import LayananKami from "@/components/landingPage/LayananKami";
+import AreaServedSection from "@/components/landingPage/AreaServedSection";
+
 
 export default function LandingContent() {
   useEffect(() => {
@@ -29,6 +31,7 @@ export default function LandingContent() {
         <div className="bg-stone-50 dark:bg-gray-900 py-6 sm:py-8">
           <div className="w-full px-5 lg:px-5">
             <ContentSection />
+            <AreaServedSection />
             <CardStatistik />
             <ValuesSection />
             <LogoClouds />

@@ -14,7 +14,7 @@ export default async function LayananContent({ slug }: { slug: string }) {
         <SidebarWithMotion slug={slug} />
 
         {/* Konten */}
-        <div className="pt-5 lg:pt-6 px-4 lg:px-8 mt-[20px] mb-[40px]">
+        <div className="pt-5 lg:pt-6 px-4 lg:px-8 mt-[20px] mb-[40px] text-justify">
           <LayananAnimatedContent layanan={layananDetail} />
         </div>
       </div>

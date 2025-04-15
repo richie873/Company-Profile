@@ -20,26 +20,34 @@ export default function LayananAnimatedContent({ layanan }: Props) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="max-w-4xl mx-auto"
+      className="max-w-4xl mx-auto px-4"
     >
-      <h1 className="text-3xl font-bold text-center mb-4 dark:text-white">{layanan.title}</h1>
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 dark:text-white">
+        {layanan.title}
+      </h1>
+
       <Image
         src={layanan.imageUrl}
         alt={layanan.title}
-        width={600}
-        height={300}
-        className="rounded-lg mb-4 object-contain mx-auto max-w-sm"
+        width={900}
+        height={600}
+        className="rounded-lg mb-6 object-contain mx-auto w-full max-w-3xl"
       />
-      <p className="text-gray-900 ml-[10px] text-lg dark:text-white">{layanan.description}</p>
+
+      <p className="text-base sm:text-lg md:text-xl text-gray-900 dark:text-white text-justify mb-4">
+        {layanan.description}
+      </p>
 
       {layanan.content && (
-        <p className="mt-4 text-gray-900 ml-[10px] dark:text-white">{layanan.content}</p>
+        <p className="text-base sm:text-lg md:text-xl text-gray-900 dark:text-white text-justify mb-4">
+          {layanan.content}
+        </p>
       )}
 
       {layanan.features && (
-        <ul className="mt-4 list-disc ml-[10px] list-inside text-gray-900 dark:text-white">
+        <ul className="list-disc list-inside text-base sm:text-lg md:text-xl text-gray-900 dark:text-white ml-4">
           {layanan.features.map((feature, index) => (
-            <li key={index}>{feature}</li>
+            <li key={index} className="mb-1">{feature}</li>
           ))}
         </ul>
       )}

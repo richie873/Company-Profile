@@ -1,8 +1,8 @@
-// app/layout.tsx (TETAP server component)
+// app/layout.tsx (tetap server component)
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import ThemeWrapper from "@/components/theme/ThemeWrapper" // kita buat komponen baru untuk handle dark mode
+import ThemeWrapper from "@/components/theme/ThemeWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,16 +17,16 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://kanajaya.co.id"),
   title:
-    "PT Kana Jaya | Aplikator Spesialis Aluminium, Gypsum, Baja, Plafon, Partisi, Stainless Steel, Curtain Wall, Aluminium Composite Panel Dan Berbagai Jenis Tempered Laminate",
+    "PT Kana Jaya | Aplikator Aluminium, ACP, Gypsum, Kaca, Stainless Steel & Baja di Karawang & Jabodetabek",
   description:
-    "PT Kana Jaya adalah Aplikator profesional dan penyedia material terpercaya untuk Aluminium, Kaca, ACP, Gypsum, Baja dan Stainless Steel.",
+    "PT Kana Jaya adalah aplikator profesional dan penyedia material terpercaya untuk Aluminium, Kaca, ACP, Gypsum, Baja, dan Stainless Steel di Karawang dan Jabodetabek.",
   openGraph: {
     type: "website",
     url: "https://kanajaya.co.id",
     title:
-      "PT Kana Jaya | Aplikator Spesialis Aluminium, Gypsum, Baja, Plafon, Partisi, Stainless Steel, Curtain Wall, Aluminium Composite Panel",
+      "PT Kana Jaya | Aplikator Aluminium, ACP, Gypsum, Kaca & Baja di Karawang & Jabodetabek",
     description:
-      "PT Kana Jaya adalah Aplikator profesional dan penyedia material terpercaya untuk Aluminium, Kaca, ACP, Gypsum, Baja dan Stainless Steel.",
+      "PT Kana Jaya melayani proyek di Karawang dan Jabodetabek sebagai aplikator profesional dan penyedia material terpercaya untuk Aluminium, Kaca, ACP, Gypsum, Baja dan Stainless Steel.",
     siteName: "PT Kana Jaya",
     images: [
       {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "PT Kana Jaya",
     description:
-      "Aplikator Spesialis Aluminium, Gypsum, Baja, Plafon, Partisi, dan lainnya.",
+      "Aplikator Spesialis Aluminium, Gypsum, Baja, Plafon, Partisi di Karawang dan Jabodetabek.",
     images: ["https://kanajaya.co.id/og-image.png"],
   },
 };
@@ -58,6 +58,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
 
+        {/* Schema Organization */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -68,6 +69,36 @@ export default function RootLayout({
               url: "https://kanajaya.co.id",
               logo: "https://kanajaya.co.id/apple-touch-icon.png",
               sameAs: ["https://kanajaya.co.id"],
+            }),
+          }}
+        />
+
+        {/* Schema Local Business */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "PT Kana Jaya",
+              image: "https://kanajaya.co.id/og-image.png",
+              "@id": "https://kanajaya.co.id",
+              url: "https://kanajaya.co.id",
+              telephone: "+62-xxx-xxxxxxx", // opsional: ganti dengan nomor real
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Karawang",
+                addressRegion: "Jawa Barat",
+                addressCountry: "ID",
+              },
+              areaServed: [
+                "Karawang",
+                "Jakarta",
+                "Bogor",
+                "Depok",
+                "Tangerang",
+                "Bekasi",
+              ],
             }),
           }}
         />
