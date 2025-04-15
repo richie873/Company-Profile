@@ -36,7 +36,9 @@ export default function Navbar() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        navbarScrolled ? "bg-[#1E3A8A] shadow-md py-[8px]" : "bg-transparent py-[16px]"
+        navbarScrolled
+          ? "bg-[#1E3A8A] shadow-md py-[8px]"
+          : "bg-transparent py-[16px]"
       }`}
     >
       {/* Info Kontak */}
@@ -44,11 +46,28 @@ export default function Navbar() {
         <div className="bg-gray-100 mt-[-18px] py-2 text-sm text-gray-700 flex justify-end px-4 md:px-8">
           <div className="flex items-center">
             <EnvelopeIcon className="w-5 h-5" />
-            <span className="ml-[5px] mr-[15px]">kana.jaya@gmail.com</span>
+            {/* Email */}
+            <a
+              href="mailto:marketing@kanajaya.co.id"
+              className="flex items-center gap-3 justify-center hover:underline"
+            >
+              <span className="ml-[5px] mr-[15px]">
+                marketing@kanajaya.co.id
+              </span>
+            </a>
           </div>
           <div className="flex items-center">
             <PhoneIcon className="w-5 h-5" />
-            <span className="ml-[5px]">085877812999</span>
+            <a
+              href="https://wa.me/6285877812999"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 justify-center hover:underline"
+            >
+              <span className="ml-[5px]">
+                +62 858-7781-2999
+              </span>
+            </a>
           </div>
         </div>
       )}
@@ -56,7 +75,10 @@ export default function Navbar() {
       <nav className="flex items-center justify-between px-4 md:px-8">
         {/* Logo + Nama */}
         <div className="flex items-center gap-2">
-          <Link href="/" className="p-1.5 relative w-12 h-12 md:w-[60px] md:h-[60px]">
+          <Link
+            href="/"
+            className="p-1.5 relative w-12 h-12 md:w-[60px] md:h-[60px]"
+          >
             <div className="relative w-full h-full">
               <Image
                 src="/images/kanajaya.jpg"
@@ -68,8 +90,12 @@ export default function Navbar() {
             </div>
           </Link>
           <div className="flex flex-col">
-            <p className="font-bold text-white text-lg md:text-base">Kana Jaya</p>
-            <p className="text-white text-sm md:text-xs">General Contractor & Supplier</p>
+            <p className="font-bold text-white text-lg md:text-base">
+              Kana Jaya
+            </p>
+            <p className="text-white text-sm md:text-xs">
+              General Contractor & Supplier
+            </p>
           </div>
         </div>
 
@@ -92,14 +118,21 @@ export default function Navbar() {
 
         {/* Mobile Button */}
         <div className="lg:hidden">
-          <button onClick={() => setMobileMenuOpen(true)} className="text-white p-2">
+          <button
+            onClick={() => setMobileMenuOpen(true)}
+            className="text-white p-2"
+          >
             <Bars3Icon className="w-6 h-6" />
           </button>
         </div>
       </nav>
 
       {/* Mobile Sidebar */}
-      <Dialog open={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)} className="lg:hidden">
+      <Dialog
+        open={mobileMenuOpen}
+        onClose={() => setMobileMenuOpen(false)}
+        className="lg:hidden"
+      >
         <div className="fixed inset-0 z-40 bg-black/50" />
         <DialogPanel className="fixed inset-y-0 right-0 z-50 w-4/5 max-w-[280px] bg-white px-6 py-6 shadow-lg">
           <div className="flex items-center justify-between">

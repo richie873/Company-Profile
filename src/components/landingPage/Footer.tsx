@@ -17,10 +17,25 @@ export default function Footer() {
         {/* Teks di kanan */}
         <div className="text-center sm:text-left text-sm sm:text-base">
           <p className="mt-1">
-            Email: <a href="mailto:kana.jaya@gmail.com" className="underline hover:text-gray-300">kana.jaya@gmail.com</a> | 
-            Phone: <a href="https://wa.me/6285877812999" className="underline hover:text-gray-300 ml-1">+62 858-7781-2999</a>
+            Email :
+            <a
+              href="mailto:marketing@kanajaya.co.id"
+              className="underline hover:text-gray-300"
+            >
+              <span className="text-lg"> marketing@kanajaya.co.id </span>
+            </a>
+            | Phone :
+            <a
+              href="https://wa.me/6285877812999"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-gray-300 ml-1"
+            >
+              <span className="text-lg"> +62 858-7781-2999 </span>
+            </a>
           </p>
-          <p className="mt-1">Alamat: Resinda blok D3 no 5 Karawang</p>
+
+          <p className="mt-1 text-lg">Alamat: Resinda blok D3 no 5 Karawang</p>
           <p className="font-semibold mt-[10px]">
             PT Kana Jaya &copy; 2025 - All Rights Reserved
           </p>

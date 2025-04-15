@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 
 const stats = [
-  { id: 1, name: "Proyek Selesai", value: 116 },
+  { id: 1, name: "Proyek Selesai", value: 118 },
   { id: 2, name: "Tahun Berpengalaman", value: 36 },
 ];
 

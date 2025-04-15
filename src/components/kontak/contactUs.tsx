@@ -49,12 +49,12 @@ export default function ContentSection() {
 
             {/* Email */}
             <a
-              href="mailto:kana.jaya@gmail.com"
+              href="mailto:marketing@kanajaya.co.id"
               className="flex items-center gap-3 justify-center hover:underline"
             >
               <FaEnvelope className="text-red-400 text-xl" />
               <span className="font-medium text-xl underline">
-                kana.jaya@gmail.com
+                marketing@kanajaya.co.id
               </span>
             </a>
 

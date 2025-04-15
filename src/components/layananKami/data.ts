@@ -1,11 +1,11 @@
 export const layanan = [
   {
     id: 1,
-    title: "Pintu dan Jendela Aluminium Modern",
+    title: "Pintu dan Jendela Aluminium Minimalis",
     description: "Spesialis pengadaan dan pemasangan pintu serta jendela aluminium yang tahan lama dan elegan.",
     imageUrl: "/images/layananKami/PintuJendelaAluminium.jpg",
     content:
-      "PT Kana Jaya menyediakan solusi lengkap untuk pemasangan pintu dan jendela berbahan aluminium. Cocok untuk rumah tinggal, gedung perkantoran, hingga bangunan komersial. Produk kami tahan karat, tampil modern, dan minim perawatan.",
+      "PT Kana Jaya menyediakan solusi lengkap untuk pemasangan pintu dan jendela berbahan aluminium. Cocok untuk rumah tinggal, gedung perkantoran, hingga bangunan komersial. Produk kami tahan karat, tampil minimalis, dan minim perawatan.",
     features: [
       "Material aluminium premium",
       "Desain modern dan minimalis",
@@ -94,7 +94,7 @@ export const layanan = [
     id: 8,
     title: "Pembangunan Rumah dan Renovasi",
     description: "Bangun dan renovasi rumah dengan solusi lengkap dari PT Kana Jaya dari material hingga pengerjaan.",
-    imageUrl: "/images/layananKami/pembangunanRumah.webp",
+    imageUrl: "/images/layananKami/Ruko - Resinda Estate.jpg",
     content:
       "PT Kana Jaya siap membantu Anda membangun atau merenovasi rumah secara menyeluruh. Dengan dukungan arsitek dan tim konstruksi internal, kami pastikan setiap detail sesuai dengan kebutuhan dan gaya Anda.",
     features: [
@@ -105,7 +105,7 @@ export const layanan = [
   },
   {
     id: 9,
-    title: "Jasa Pembangunan Gudang",
+    title: "Spesialis Pembangunan Gudang",
     description: "Solusi pembangunan gudang industri dan komersial dengan struktur kuat dan efisien.",
     imageUrl: "/images/layananKami/pergudangan.jpg",
     content:
