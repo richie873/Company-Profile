@@ -22,12 +22,14 @@ export async function generateMetadata({
     };
   }
 
+  const seoTitle = layanan.seoTitle || `${layanan.title} | PT Kana Jaya`;
+
   return {
-    title: `${layanan.title} | PT Kana Jaya`,
+    title: seoTitle,
     description: layanan.description,
     robots: "index, follow",
     openGraph: {
-      title: `${layanan.title} | PT Kana Jaya`,
+      title: seoTitle,
       description: layanan.description,
       url: `https://kanajaya.co.id/layanan-kami/${slug}`,
       images: [
@@ -39,7 +41,7 @@ export async function generateMetadata({
   };
 }
 
-// ✅ Sama juga untuk komponen halaman utama
+// ✅ Halaman detail layanan
 export default async function Page({
   params,
 }: {

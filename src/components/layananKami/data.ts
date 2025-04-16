@@ -2,6 +2,7 @@ export const layanan = [
   {
     id: 1,
     title: "Pintu dan Jendela Aluminium Minimalis",
+    seoTitle: "Aplikator Pintu Aluminium & Jendela Aluminium Minimalis Karawang, Jabodetabek | PT Kana Jaya",
     description: "Spesialis pintu dan jendela aluminium untuk proyek di Karawang, Jabodetabek, dan seluruh Indonesia.",
     imageUrl: "/images/layananKami/PintuJendelaAluminium.jpg",
     content:
@@ -15,7 +16,8 @@ export const layanan = [
   {
     id: 2,
     title: "Kaca Tempered, Laminated, dan Kaca Hias",
-    description: "Layanan pemasangan kaca fungsional dan dekoratif yang menjangkau seluruh Indonesia.",
+    seoTitle: "Aplikator Kaca Tempered, Laminated & Kaca Hias Karawang & Jabodetabek | PT Kana Jaya",
+    description: "Layanan pemasangan dan pengadaan kaca fungsional dan dekoratif yang menjangkau seluruh Indonesia.",
     imageUrl: "/images/layananKami/kaca.jpg",
     content:
       "Kami menyediakan dan memasang kaca tempered, laminated, dan kaca hias untuk interior maupun eksterior bangunan. PT Kana Jaya hadir di Karawang, Jabodetabek, dan siap melayani proyek di seluruh Indonesia.",
@@ -28,6 +30,7 @@ export const layanan = [
   {
     id: 3,
     title: "(ACP) Pemasangan Aluminium Composite Panel",
+    seoTitle: "Pemasangan ACP (Aluminium Composite Panel) Karawang & Jabodetabek | PT Kana Jaya",
     description: "Spesialis ACP untuk fasad dan interior bangunan di berbagai kota di Indonesia.",
     imageUrl: "/images/layananKami/aluminiumCompositePanel.webp",
     content:
@@ -41,6 +44,7 @@ export const layanan = [
   {
     id: 4,
     title: "Plafon Gypsum, PVC, dan Akustik",
+    seoTitle: "Aplikator Plafon Gypsum, PVC & Akustik Karawang, Jabodetabek | PT Kana Jaya",
     description: "Aplikator plafon rumah, kantor, dan ruang publik untuk area Karawang dan nasional.",
     imageUrl: "/images/layananKami/plafon.jpg",
     content:
@@ -54,6 +58,7 @@ export const layanan = [
   {
     id: 5,
     title: "Partisi Ruangan Kaca, Gypsum, dan Movable Wall",
+    seoTitle: "Partisi Ruangan Kaca, Gypsum & Movable Wall Karawang & Jabodetabek | PT Kana Jaya",
     description: "Solusi partisi ruangan modern untuk kebutuhan kantor dan rumah di seluruh Indonesia.",
     imageUrl: "/images/layananKami/partisi.png",
     content:
@@ -67,7 +72,8 @@ export const layanan = [
   {
     id: 6,
     title: "Curtain Wall Facade Gedung",
-    description: "Pemasangan curtain wall gedung untuk wilayah Karawang, Jabodetabek, dan nasional.",
+    seoTitle: "Jasa Pemasangan dan pengadaan material Curtain Wall Facade Karawang & Jabodetabek | PT Kana Jaya",
+    description: "Pemasangan dan pengadaan material curtain wall gedung untuk wilayah Karawang, Jabodetabek, dan nasional.",
     imageUrl: "/images/layananKami/curtainWallFacade.png",
     content:
       "Kami menghadirkan solusi facade gedung dengan curtain wall berkualitas tinggi. PT Kana Jaya melayani proyek-proyek di Karawang, Jabodetabek, serta seluruh wilayah Indonesia.",
@@ -80,6 +86,7 @@ export const layanan = [
   {
     id: 7,
     title: "Aplikator Konstruksi Rangka Baja",
+    seoTitle: "Aplikator Baja Ringan & Baja Berat Profesional Karawang, Jabodetabek | PT Kana Jaya",
     description: "Layanan konstruksi baja ringan dan berat untuk proyek industri dan komersial di seluruh Indonesia.",
     imageUrl: "/images/layananKami/baja.jpg",
     content:
@@ -93,6 +100,7 @@ export const layanan = [
   {
     id: 8,
     title: "Pembangunan Rumah dan Renovasi",
+    seoTitle: "Jasa Bangun Rumah & Renovasi Rumah Karawang, Jabodetabek | PT Kana Jaya",
     description: "Jasa pembangunan dan renovasi rumah profesional di Karawang hingga ke seluruh Indonesia.",
     imageUrl: "/images/layananKami/Ruko - Resinda Estate.jpg",
     content:
@@ -106,6 +114,7 @@ export const layanan = [
   {
     id: 9,
     title: "Spesialis Pembangunan Gudang",
+    seoTitle: "Spesialis Pembangunan Gudang Karawang & Jabodetabek | PT Kana Jaya",
     description: "Solusi gudang industri dan komersial dengan sistem baja untuk seluruh wilayah Indonesia.",
     imageUrl: "/images/layananKami/pergudangan.jpg",
     content:
@@ -119,6 +128,7 @@ export const layanan = [
   {
     id: 10,
     title: "Pembuatan Jalan Aspal dan Beton",
+    seoTitle: "Jasa Pembuatan Jalan Aspal & Jalan Beton Karawang, Jabodetabek | PT Kana Jaya",
     description: "Layanan jalan aspal dan beton dari Karawang hingga berbagai wilayah di Indonesia.",
     imageUrl: "/images/layananKami/pembuatanJalan.jpg",
     content:
@@ -132,6 +142,7 @@ export const layanan = [
   {
     id: 11,
     title: "Pembuatan Saluran Irigasi",
+    seoTitle: "Pembangunan Saluran Irigasi Karawang, Jabodetabek & Sekitarnya | PT Kana Jaya",
     description: "Jasa pembangunan saluran irigasi presisi untuk pertanian dan kawasan industri di Indonesia.",
     imageUrl: "/images/layananKami/saluranIrigasinew.jpg",
     content:
