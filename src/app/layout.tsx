@@ -54,8 +54,8 @@ export default function RootLayout({
   return (
     <html lang="id" className="scroll-smooth">
       <head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/logo-kanajaya.png" />
+        <link rel="apple-touch-icon" href="/logo-kanajaya.png" />
         <link rel="manifest" href="/manifest.json" />
 
         {/* Schema Organization */}
@@ -67,7 +67,7 @@ export default function RootLayout({
               "@type": "Organization",
               name: "PT Kana Jaya",
               url: "https://kanajaya.co.id",
-              logo: "https://kanajaya.co.id/apple-touch-icon.png",
+              logo: "https://kanajaya.co.id/logo-kanajaya.png",
               sameAs: ["https://kanajaya.co.id"],
             }),
           }}
@@ -81,10 +81,10 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "PT Kana Jaya",
-              image: "https://kanajaya.co.id/og-image.png",
+              image: "https://kanajaya.co.id/logo-kanajaya.png",
               "@id": "https://kanajaya.co.id",
               url: "https://kanajaya.co.id",
-              telephone: "+62-xxx-xxxxxxx", // opsional: ganti dengan nomor real
+              telephone: "+6285877812999", // opsional: ganti dengan nomor real
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Karawang",

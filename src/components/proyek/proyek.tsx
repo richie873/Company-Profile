@@ -141,8 +141,8 @@ const posts = [
   },
   {
     id: 23,
-    title: "Ruko - Resinda Estate",
-    description: "Ruko - Resinda Estate",
+    title: "Ruko Resinda Estate - Karawang",
+    description: "Ruko Resinda Estate - Karawang",
     imageUrl: "/images/porto/proyek/Ruko - Resinda Estate.jpg",
   },
 ];
