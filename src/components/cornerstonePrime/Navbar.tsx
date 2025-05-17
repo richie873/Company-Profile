@@ -39,34 +39,34 @@ export default function Navbar() {
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         navbarScrolled
           ? "bg-[#1E3A8A] shadow-md py-[8px]"
-          : "bg-transparent py-[16px]"
+          : "bg-[#1E3A8A] shadow-md py-[8px]"
       }`}
     >
       {/* Info Kontak */}
       {!navbarScrolled && (
-        <div className="bg-gray-100 mt-[-18px] py-2 text-sm text-gray-700 flex justify-end px-4 md:px-8">
+        <div className="bg-gray-100 mt-[-8px] py-2 text-sm text-gray-700 flex justify-end px-4 md:px-8">
           <div className="flex items-center">
             <EnvelopeIcon className="w-5 h-5" />
             {/* Email */}
             <a
-              href="mailto:marketing@kanajaya.co.id"
+              href="mailto:cornerstoneprimeconstruction@kanajaya.co.id"
               className="flex items-center gap-3 justify-center hover:underline"
             >
               <span className="ml-[5px] mr-[15px]">
-                marketing@kanajaya.co.id
+                cornerstoneprimeconstruction@kanajaya.co.id
               </span>
             </a>
           </div>
           <div className="flex items-center">
             <PhoneIcon className="w-5 h-5" />
             <a
-              href="https://wa.me/6285877812999"
+              href="https://wa.me/6285183300289"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 justify-center hover:underline"
             >
               <span className="ml-[5px]">
-                +62 858-7781-2999
+                 +62-851-8330-0289
               </span>
             </a>
           </div>
