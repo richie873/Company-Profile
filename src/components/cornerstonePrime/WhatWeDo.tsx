@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const stats = [
   { id: 1, title: "General Contracting", name: "Full-service project execution from concept to completion, with a focus on quality, cost-efficiency, and time control."},
@@ -25,23 +26,42 @@ export default function WhatWeDo() {
 
       {/* Content */}
       <div className="relative z-10 p-6 sm:p-12 max-w-6xl w-full text-white">
-        <h1 className="text-lg text-justify sm:text-3xl font-bold md:text-center mb-10">At Cornerstone Prime Construction, we provide comprehensive construction solutions tailored to each clients vision and goals. Our core services include:</h1>
-        <div className="space-y-6">
-          {stats.map((stat, index) => (
-            <div
-              key={stat.id}
-              className="bg-white/10 border border-white/20 p-6 rounded-xl transition hover:bg-white/20"
-            >
-              <div className="flex items-start gap-4">
-                <div className="text-3xl font-extrabold">{index + 1}.</div>
-                <div>
-                  <h2 className="text-xl sm:text-2xl font-semibold mb-1">{stat.title}</h2>
-                  <p className="text-sm sm:text-lg font-normal text-white/90">{stat.name}</p>
+        <h1 className="text-lg text-justify sm:text-3xl font-bold md:text-center mb-10">
+          WHAT WE DO
+        </h1>
+        <motion.div
+          className="flex flex-col items-center w-full lg:w-full"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.3, ease: "easeOut", delay: 0.2 }}
+          viewport={{ once: true }}
+        >
+          <h1 className="text-lg text-justify sm:text-3xl font-bold md:text-center mb-10">
+            At Cornerstone Prime Construction, we provide comprehensive
+            construction solutions tailored to each clients vision and goals.
+            Our core services include:
+          </h1>
+          <div className="space-y-6">
+            {stats.map((stat, index) => (
+              <div
+                key={stat.id}
+                className="bg-white/10 border border-white/20 p-6 rounded-xl transition hover:bg-white/20"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="text-3xl font-extrabold">{index + 1}.</div>
+                  <div>
+                    <h2 className="text-xl sm:text-2xl font-semibold mb-1">
+                      {stat.title}
+                    </h2>
+                    <p className="text-sm sm:text-lg font-normal text-white/90">
+                      {stat.name}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </div>
   );

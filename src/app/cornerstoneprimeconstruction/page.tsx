@@ -9,6 +9,7 @@ import WhoWeAre from "@/components/cornerstonePrime/WhoWeAre";
 import AboutUs from "@/components/cornerstonePrime/AboutCornerstone";
 import WhatWeDo from "@/components/cornerstonePrime/WhatWeDo";
 import ConstructionCornerstone from "@/components/cornerstonePrime/ConstructionCornerstone"
+import HowWeWork from "@/components/cornerstonePrime/HowWeWork"
 
 
 export default function LandingContent() {
@@ -27,6 +28,7 @@ export default function LandingContent() {
             <WhoWeAre />
             <WhatWeDo />
             <ConstructionCornerstone />
+            <HowWeWork />
           </div>
         </div>
       </div>
