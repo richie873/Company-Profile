@@ -10,7 +10,8 @@ import AboutUs from "@/components/cornerstonePrime/AboutCornerstone";
 import WhatWeDo from "@/components/cornerstonePrime/WhatWeDo";
 import ConstructionCornerstone from "@/components/cornerstonePrime/ConstructionCornerstone"
 import HowWeWork from "@/components/cornerstonePrime/HowWeWork"
-
+import Experience from "@/components/cornerstonePrime/Experience"
+import ContactUs from "@/components/cornerstonePrime/ContactUs"
 
 export default function LandingContent() {
   useEffect(() => {
@@ -29,6 +30,8 @@ export default function LandingContent() {
             <WhatWeDo />
             <ConstructionCornerstone />
             <HowWeWork />
+            <Experience />
+            <ContactUs />
           </div>
         </div>
       </div>

@@ -1,8 +1,17 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const stats = [
-  { id: 1, name: "Where Excellence Meets Innovation in Every Build."},
-  { id: 2, name: "We dont just build structures — we craft spaces that embody quality, innovation, and prestige."},
+  {
+    id: 1,
+    name: "Where Excellence Meets Innovation in Every Build.",
+  },
+  {
+    id: 2,
+    name: "We don't just build structures — we craft spaces that embody quality, innovation, and prestige.",
+  },
 ];
 
 export default function AboutCornerstone() {
@@ -23,10 +32,22 @@ export default function AboutCornerstone() {
       {/* Teks & Statistik */}
       <div className="relative z-10 text-center p-6 sm:p-10 text-white font-bold">
         <dl className="flex flex-col items-center gap-6">
-          {stats.map((stat) => (
-            <div key={stat.id}>
-              <dd className="text-xl md:text-4xl">{stat.name}</dd>
-            </div>
+          {stats.map((stat, index) => (
+            <motion.div
+              key={stat.id}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.9,
+                ease: "easeOut",
+                delay: index * 0.3,
+              }}
+              viewport={{ once: true }}
+            >
+              <motion.dd className="text-xl md:text-4xl max-w-4xl">
+                {stat.name}
+              </motion.dd>
+            </motion.div>
           ))}
         </dl>
       </div>

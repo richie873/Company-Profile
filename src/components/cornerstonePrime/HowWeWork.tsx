@@ -9,7 +9,7 @@ const stats = [
   { id: 5, title: "Sustainable & Scalable Thinking", name: "We integrate smart, efficient, and future-ready solutions into every build." },
 ];
 
-export default function WhatWeDo() {
+export default function HowWeWork() {
   return (
     <div className="relative flex items-center justify-center mb-10 mt-10 min-h-[600px] overflow-hidden rounded-2xl">
       {/* Background Image */}
