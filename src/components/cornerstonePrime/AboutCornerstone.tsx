@@ -6,11 +6,7 @@ import { motion } from "framer-motion";
 const stats = [
   {
     id: 1,
-    name: "Where Excellence Meets Innovation in Every Build.",
-  },
-  {
-    id: 2,
-    name: "We don't just build structures — we craft spaces that embody quality, innovation, and prestige.",
+    name: "Where Excellence Meets Innovation in Every Build.", description: "We don't just build structures — we craft spaces that embody quality, innovation, and prestige.",
   },
 ];
 
@@ -44,9 +40,12 @@ export default function AboutCornerstone() {
               }}
               viewport={{ once: true }}
             >
-              <motion.dd className="text-xl md:text-4xl max-w-4xl">
+              <motion.dd className="text-2xl md:text-5xl max-w-4xl mb-[10px]">
                 {stat.name}
               </motion.dd>
+              <motion.dt className="text-base md:text-xl max-w-4xl">
+                {stat.description}
+              </motion.dt>
             </motion.div>
           ))}
         </dl>
