@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function ContactUs() {
   return (
@@ -32,43 +33,68 @@ export default function ContactUs() {
           </h2>
 
           <p className="text-center text-base sm:text-lg leading-relaxed mb-8">
-            Lets turn your vision into something real — with the strength and
+            Let’s turn your vision into something real — with the strength and
             style of Cornerstone Prime Construction.
           </p>
 
-          {/* Alamat */}
-          <div className="text-sm sm:text-base space-y-4 text-center">
-            <p className="font-semibold">📍 Office:</p>
-            <p>
-              District 8, Gedung The Energy, Treasury Tower, <br />
-              Jl. Jend. Sudirman Kav. 52-53, 31st Floor, <br />
-              Jakarta Selatan 12190
-            </p>
+          {/* Kontak & Alamat */}
+          <div className="text-sm sm:text-base space-y-6 text-center">
+            {/* Alamat */}
+            <div>
+              <p className="font-semibold mb-1">Office:</p>
+              <div className="flex items-start text-center justify-center gap-x-3">
+                <FaMapMarkerAlt className="text-green-400 mt-1" />
+                <p>
+                  District 8, Gedung The Energy, Treasury Tower, <br />
+                  Jl. Jend. Sudirman Kav. 52-53, 31st Floor, <br />
+                  Jakarta Selatan 12190
+                </p>
+              </div>
+            </div>
 
-            <p className="font-semibold mt-6">📞 Contact:</p>
-            <p>
-              <a href="https://wa.me/6285183300289" target="_blank" className="underline hover:text-yellow-400">+62 851 8330 0289</a><br />
-              
-              <a
-                href="mailto:cornerstoneprimeconstruction@kanajaya.co.id"
-                className="underline hover:text-yellow-400"
-              >
-                cornerstoneprimeconstruction@kanajaya.co.id
-              </a>
-            </p>
+            {/* Kontak */}
+            <div>
+              <p className="font-semibold mb-1">Contact:</p>
 
-            <p className="font-semibold mt-6">🔗 Social:</p>
-            <p>
-              Instagram:{" "}
-              <a
-                href="https://instagram.com/cornerstoneprimeconstruction"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-yellow-400"
-              >
-                @cornerstoneprimeconstruction
-              </a>
-            </p>
+              {/* Telepon */}
+              <div className="flex items-center justify-center gap-x-3">
+                <FaPhone className="text-red-400" />
+                <a
+                  href="https://wa.me/6285183300289"
+                  target="_blank"
+                  className="underline hover:text-yellow-400"
+                >
+                  +62 851 8330 0289
+                </a>
+              </div>
+
+              {/* Email */}
+              <div className="flex items-center justify-center gap-x-3 mt-2">
+                <FaEnvelope className="text-red-400" />
+                <a
+                  href="mailto:cornerstoneprimeconstruction@kanajaya.co.id"
+                  className="underline hover:text-yellow-400"
+                >
+                  cornerstoneprimeconstruction@kanajaya.co.id
+                </a>
+              </div>
+            </div>
+
+            {/* Social */}
+            <div>
+              <p className="font-semibold mb-1">Social:</p>
+              <p>
+                Instagram:{" "}
+                <a
+                  href="https://instagram.com/cornerstoneprimeconstruction"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-yellow-400"
+                >
+                  @cornerstoneprimeconstruction
+                </a>
+              </p>
+            </div>
           </div>
         </motion.div>
       </div>
