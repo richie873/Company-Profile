@@ -1,8 +1,10 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
+import { useInView } from "react-intersection-observer";
+
 
 // Data statistik
 const stats = [
@@ -40,23 +42,25 @@ const StatisticCard = ({
   value: number;
   description: string;
 }) => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-  const animatedValue = useCountUp(value, isInView);
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+  const animatedValue = useCountUp(value, inView);
 
   return (
     <motion.div
       ref={ref}
       className="backdrop-blur-sm bg-white/5 p-6 rounded-xl shadow-lg border border-white/10"
       initial={{ opacity: 0, y: 40 }}
-      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8, delay: 0.1 }}
     >
       <dt className="text-white text-lg sm:text-xl font-medium mb-2">{name}</dt>
       <dd className="flex items-end justify-center text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500">
         <motion.span
           initial={{ opacity: 0 }}
-          animate={{ opacity: isInView ? 1 : 0 }}
+          animate={{ opacity: inView ? 1 : 0 }}
           transition={{ duration: 1 }}
         >
           {animatedValue}

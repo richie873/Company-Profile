@@ -15,7 +15,7 @@ const posts = [
 
 export default function WhoWeAre() {
   return (
-    <div className="flex flex-col lg:flex-row items-center gap-8 w-full">
+    <div className="flex flex-col lg:flex-row items-center gap-8 w-full px-4 md:px-8 lg:px-12">
       {/* Gambar */}
       <motion.div
         className="relative flex justify-center w-full lg:w-1/2"
@@ -24,16 +24,14 @@ export default function WhoWeAre() {
         transition={{ duration: 1.3, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <div
-          className="relative w-full"
-        >
+        <div className="relative w-full max-w-screen-md">
           <Image
             src="/images/cornerstonelogo.png"
             alt="Pabrik Kopi Kapal Api - Balaraja Tangerang"
             title="Pabrik Kopi Kapal Api - Balaraja Tangerang"
             width={800}
             height={600}
-            className="rounded-lg shadow-lg w-full h-[375px] object-cover"
+            className="w-full h-auto max-h-[500px] rounded-lg shadow-lg object-contain"
             priority={false}
           />
         </div>

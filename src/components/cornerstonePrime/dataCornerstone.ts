@@ -18,7 +18,7 @@ export const layanan = [
     title: "Hospitality",
     seoTitle: "Aplikator Kaca Tempered, Laminated & Kaca Hias Karawang & Jabodetabek | PT Kana Jaya",
     description: "Hotel, Apartment, Villa",
-    imageUrl: "/images/cornerstone/layananCornerstone2.png",
+    imageUrl: "/images/cornerstone/layananCornerstoneNew2.png",
     content:
       "Kami menyediakan dan memasang kaca tempered, laminated, dan kaca hias untuk interior maupun eksterior bangunan. PT Kana Jaya hadir di Karawang, Jabodetabek, dan siap melayani proyek di seluruh Indonesia.",
     features: [
@@ -32,7 +32,7 @@ export const layanan = [
     title: "Retail & Lifestyle",
     seoTitle: "Pemasangan ACP Aluminium Composite Panel Karawang & Jabodetabek | PT Kana Jaya",
     description: "Mall, Restaurants, Cafe",
-    imageUrl: "/images/cornerstone/layananCornerstone3.png",
+    imageUrl: "/images/cornerstone/layananCornerstoneNew3.png",
     content:
       "Kami melayani pengadaan dan pemasangan Aluminium Composite Panel (ACP) untuk fasad dan interior bangunan, menjangkau proyek di Karawang, Jabodetabek, hingga berbagai daerah di Indonesia.",
     features: [

@@ -44,31 +44,28 @@ export default function Navbar() {
     >
       {/* Info Kontak */}
       {!navbarScrolled && (
-        <div className="bg-gray-100 mt-[-8px] py-2 text-sm text-gray-700 flex justify-end px-4 md:px-8">
-          <div className="flex items-center">
-            <EnvelopeIcon className="w-5 h-5" />
-            {/* Email */}
-            <a
-              href="mailto:cornerstoneprimeconstruction@kanajaya.co.id"
-              className="flex items-center gap-3 justify-center hover:underline"
-            >
-              <span className="ml-[5px] mr-[15px]">
+        <div className="bg-gray-100 mt-[-8px] py-2 text-sm text-gray-700 px-4 md:px-8">
+          <div className="flex flex-col sm:flex-row sm:justify-end sm:items-center gap-2 sm:gap-6">
+            <div className="flex items-center">
+              <EnvelopeIcon className="w-5 h-5 shrink-0" />
+              <a
+                href="mailto:cornerstoneprimeconstruction@kanajaya.co.id"
+                className="ml-2 hover:underline break-all"
+              >
                 cornerstoneprimeconstruction@kanajaya.co.id
-              </span>
-            </a>
-          </div>
-          <div className="flex items-center">
-            <PhoneIcon className="w-5 h-5" />
-            <a
-              href="https://wa.me/6285183300289"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 justify-center hover:underline"
-            >
-              <span className="ml-[5px]">
-                 +62-851-8330-0289
-              </span>
-            </a>
+              </a>
+            </div>
+            <div className="flex items-center">
+              <PhoneIcon className="w-5 h-5 shrink-0" />
+              <a
+                href="https://wa.me/6285183300289"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-2 hover:underline"
+              >
+                +62-851-8330-0289
+              </a>
+            </div>
           </div>
         </div>
       )}

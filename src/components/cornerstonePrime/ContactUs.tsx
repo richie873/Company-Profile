@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function ContactUs() {
   return (
@@ -43,10 +42,9 @@ export default function ContactUs() {
             <div>
               <p className="font-semibold mb-1">Office:</p>
               <div className="flex items-start text-center justify-center gap-x-3">
-                <FaMapMarkerAlt className="text-green-400 mt-1" />
                 <p>
-                  District 8, Gedung The Energy, Treasury Tower, <br />
-                  Jl. Jend. Sudirman Kav. 52-53, 31st Floor, <br />
+                  Treasury Tower, 31st Floor Jl. Jend. Sudirman <br />
+                  Kav. 52-53, District 8, SCBD,<br />
                   Jakarta Selatan 12190
                 </p>
               </div>
@@ -58,7 +56,6 @@ export default function ContactUs() {
 
               {/* Telepon */}
               <div className="flex items-center justify-center gap-x-3">
-                <FaPhone className="text-red-400" />
                 <a
                   href="https://wa.me/6285183300289"
                   target="_blank"
@@ -70,7 +67,6 @@ export default function ContactUs() {
 
               {/* Email */}
               <div className="flex items-center justify-center gap-x-3 mt-2">
-                <FaEnvelope className="text-red-400" />
                 <a
                   href="mailto:cornerstoneprimeconstruction@kanajaya.co.id"
                   className="underline hover:text-yellow-400"
@@ -82,16 +78,16 @@ export default function ContactUs() {
 
             {/* Social */}
             <div>
-              <p className="font-semibold mb-1">Social:</p>
+              <p className="font-semibold mb-1">Social Media:</p>
               <p>
                 Instagram:{" "}
                 <a
-                  href="https://instagram.com/cornerstoneprimeconstruction"
+                  href="https://instagram.com/cornerstone_prime_construction"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline hover:text-yellow-400"
                 >
-                  @cornerstoneprimeconstruction
+                  @cornerstone_prime_construction
                 </a>
               </p>
             </div>

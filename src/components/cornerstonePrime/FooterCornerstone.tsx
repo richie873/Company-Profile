@@ -39,12 +39,12 @@ export default function Footer() {
           </p>
 
           <p className="mt-3 text-lg">
-            District 8, Gedung The Energy, Treasury Tower
+            Treasury Tower, 31st Floor
           </p>
           <p className="mt-1 text-lg">
-            Jl. Jend. Sudirman kav 52-53 31st Floor
+            Jl. Jend. Sudirman Kav. 52-53,
           </p>
-          <p className="mt-1 text-lg">Daerah Khusus Ibukota Jakarta 12190</p>
+          <p className="mt-1 text-lg">District 8, SCBD, Jakarta Selatan 12190</p>
           <p className="font-semibold mt-[20px]">
             PT Kana Jaya &copy; 2025 - All Rights Reserved
           </p>
