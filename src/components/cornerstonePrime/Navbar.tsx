@@ -39,7 +39,7 @@ export default function Navbar() {
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         navbarScrolled
           ? "bg-[#1E3A8A] shadow-md py-[8px]"
-          : "bg-[#1E3A8A] shadow-md py-[8px]"
+          : "bg-transparent py-[8px]"
       }`}
     >
       {/* Info Kontak */}

@@ -12,6 +12,9 @@ import ConstructionCornerstone from "@/components/cornerstonePrime/ConstructionC
 import HowWeWork from "@/components/cornerstonePrime/HowWeWork"
 import Experience from "@/components/cornerstonePrime/Experience"
 import ContactUs from "@/components/cornerstonePrime/ContactUs"
+import VideoSlider from "@/components/cornerstonePrime/VideoSlider"
+import FloatingWhatsApp from "@/components/cornerstonePrime/FloatingWhatsApp"
+
 
 export default function LandingContent() {
   useEffect(() => {
@@ -21,7 +24,11 @@ export default function LandingContent() {
   return (
     <div className="bg-stone-50 dark:bg-gray-900 dark:text-white">
       <Navbar />
-      <div className="relative isolate w-full mt-[50px]">
+      <FloatingWhatsApp />
+      <div className="relative w-full min-h-screen overflow-hidden mt-[15px]">
+        <VideoSlider />
+      </div>
+      <div className="relative isolate w-full">
         <div className="bg-stone-50 dark:bg-gray-900 py-6 sm:py-8">
           <div className="w-full px-5 lg:px-5">
             <Dashabord />
