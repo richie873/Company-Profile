@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { videos } from "@/components/cornerstonePrime/videoCornerstone";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function VideoSlider(): React.JSX.Element {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -35,7 +36,7 @@ export default function VideoSlider(): React.JSX.Element {
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
-      {/* Video container */}
+      {/* Video */}
       <div
         className="relative w-full h-full"
         onMouseOver={() => setIsHovered(true)}
@@ -64,24 +65,33 @@ export default function VideoSlider(): React.JSX.Element {
           </AnimatePresence>
         )}
 
-        {/* Overlay */}
+        {/* Overlay gradient */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-transparent z-10" />
 
-        {/* Centered Text + Button */}
+        {/* Centered Content */}
         <motion.div
           className="absolute inset-0 z-20 flex flex-col items-center justify-center text-white text-center px-4 space-y-4"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
-          <p className="text-base sm:text-lg md:text-2xl drop-shadow-sm mb-[100px] mt-[-20px]">
-            <span className="border-b-2 border-white pb-1">
-              Cornerstone Prime Construction
-            </span>
+          <Image
+            src="/images/cornerstonelogo_clean_transparent_edit.png"
+            alt="Cornerstone Logo"
+            width={250}
+            height={250}
+            className="max-w-[250px] sm:max-w-[250px] w-full h-auto object-contain"
+            priority
+          />
+
+          <p className="text-sm sm:text-base md:text-xl drop-shadow-sm">
+            Where Excellence Meets Innovation in Every Build
           </p>
-          <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold drop-shadow-md">
+
+          <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold drop-shadow-md max-w-3xl">
             LET US HELP YOU BUILD YOUR DREAM HOME
           </h1>
+
           <Link
             href="https://wa.me/6285183300289?text=Halo%20Cornerstone%20Prime%2C%20saya%20tertarik%20dengan%20layanan%20konstruksi%20Anda."
             target="_blank"
@@ -101,7 +111,7 @@ export default function VideoSlider(): React.JSX.Element {
         </motion.div>
       </div>
 
-      {/* Navigasi */}
+      {/* Navigation Arrows */}
       {showControls && (
         <div className="absolute top-1/2 left-0 right-0 z-30 flex justify-between px-6 transform -translate-y-1/2">
           <button
@@ -119,12 +129,14 @@ export default function VideoSlider(): React.JSX.Element {
         </div>
       )}
 
-      {/* Indicator */}
+      {/* Indicators */}
       <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 z-30 flex space-x-2">
         {videos.map((_, index) => (
           <div
             key={index}
-            className={`h-2 w-2 rounded-full ${index === currentIndex ? "bg-white" : "bg-gray-400"}`}
+            className={`h-2 w-2 rounded-full ${
+              index === currentIndex ? "bg-white" : "bg-gray-400"
+            }`}
           />
         ))}
       </div>
