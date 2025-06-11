@@ -9,7 +9,7 @@ export default function FloatingWhatsApp() {
   const [isOpen, setIsOpen] = useState(false);
 
   const phone = "6285183300289";
-  const message = encodeURIComponent("Hi, I saw your ad and would love to learn more about Two Sudirman.");
+  const message = encodeURIComponent("Hello! I am interested in your construction services and would love to learn more about Cornerstone Prime Construction.");
   const whatsappLink = `https://wa.me/${phone}?text=${message}`;
 
   return (
@@ -29,7 +29,7 @@ export default function FloatingWhatsApp() {
               <div>
                 <h3 className="font-semibold text-lg text-green-600 mb-1">Chat with us</h3>
                 <p className="text-sm text-gray-700">
-                  Hi, I saw your ad and would love to learn more about Cornerstone Prime Construction.
+                  Hello! I am interested in your construction services and would love to learn more about Cornerstone Prime Construction. 
                 </p>
               </div>
               <button onClick={() => setIsOpen(false)} className="text-gray-400 hover:text-gray-600 ml-2">
