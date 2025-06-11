@@ -93,7 +93,7 @@ export default function VideoSlider(): React.JSX.Element {
           </h1>
 
           <Link
-            href="https://wa.me/6285183300289?text=Halo%20Cornerstone%20Prime%2C%20saya%20tertarik%20dengan%20layanan%20konstruksi%20Anda."
+            href="https://wa.me/6285183300289?text=Hello! I am interested in your construction services and would love to learn more about Cornerstone Prime Construction."
             target="_blank"
             rel="noopener noreferrer"
             className="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg flex items-center space-x-2 transition duration-300"
