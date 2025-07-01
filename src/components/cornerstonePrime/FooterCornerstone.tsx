@@ -51,7 +51,7 @@ export default function Footer() {
         </div>
         <div className="relative w-70 h-50 md:ml-[20px] mt-[10px] flex-shrink-0 items-end">
           <Image
-            src="/images/kanajaya.jpg"
+            src="/images/kanajayanew.jpg"
             alt="Cornerstone Prime Logo"
             fill
             className="object-contain"

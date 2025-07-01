@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "PT Kana Jaya",
     images: [
       {
-        url: "https://kanajaya.co.id/og-image.png",
+        url: "https://kanajaya.co.id/og-image-kanajaya.png",
         width: 1200,
         height: 630,
         alt: "PT Kana Jaya",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "PT Kana Jaya",
     description:
       "Aplikator Spesialis Aluminium, Gypsum, Baja, Plafon, Partisi di Karawang dan Jabodetabek.",
-    images: ["https://kanajaya.co.id/og-image.png"],
+    images: ["https://kanajaya.co.id/og-image-kanajaya.png"],
   },
 };
 
@@ -55,8 +55,8 @@ export default function RootLayout({
   return (
     <html lang="id" className="scroll-smooth">
       <head>
-        <link rel="icon" href="/logo-kanajaya.png" />
-        <link rel="apple-touch-icon" href="/logo-kanajaya.png" />
+        <link rel="icon" href="/logo-kanajaya-114x114.png" />
+        <link rel="apple-touch-icon" href="/logo-kanajaya-114x114.png" />
         <link rel="manifest" href="/manifest.json" />
 
         {/* Schema Organization */}
@@ -68,7 +68,7 @@ export default function RootLayout({
               "@type": "Organization",
               name: "PT Kana Jaya",
               url: "https://kanajaya.co.id",
-              logo: "https://kanajaya.co.id/logo-kanajaya.png",
+              logo: "https://kanajaya.co.id/logo-kanajaya-114x114.png",
               sameAs: ["https://kanajaya.co.id"],
             }),
           }}
@@ -82,10 +82,10 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "PT Kana Jaya",
-              image: "https://kanajaya.co.id/logo-kanajaya.png",
+              image: "https://kanajaya.co.id/logo-kanajaya-114x114.png",
               "@id": "https://kanajaya.co.id",
               url: "https://kanajaya.co.id",
-              telephone: "+6285877812999", // opsional: ganti dengan nomor real
+              telephone: "+6285877812999", 
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Karawang",

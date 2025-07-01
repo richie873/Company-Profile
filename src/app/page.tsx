@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: "https://kanajaya.co.id",
     images: [
       {
-        url: "https://kanajaya.co.id/og-image.png",
+        url: "https://kanajaya.co.id/og-image-kanajaya.png",
         width: 1200,
         height: 630,
         alt: "PT Kana Jaya",

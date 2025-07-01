@@ -5,9 +5,9 @@ export default function Footer() {
     <footer className="bg-gray-900 text-white py-8 px-4 dark:bg-[#1E3A8A]">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center sm:items-start gap-4">
         {/* Logo di kiri */}
-        <div className="relative w-30 h-20 flex-shrink-0">
+        <div className="relative w-60 h-40 flex-shrink-0">
           <Image
-            src="/images/kanajaya.jpg"
+            src="/images/kanajayanew.jpg"
             alt="Kana Jaya Logo"
             fill
             className="object-contain"
@@ -16,7 +16,7 @@ export default function Footer() {
 
         {/* Teks di kanan */}
         <div className="text-center sm:text-left text-sm sm:text-base">
-          <p className="mt-1">
+          <p className="mt-10">
             Email :
             <a
               href="mailto:marketing@kanajaya.co.id"

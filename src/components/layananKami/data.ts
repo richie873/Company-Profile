@@ -29,8 +29,8 @@ export const layanan = [
   },
   {
     id: 3,
-    title: "(ACP) Pemasangan Aluminium Composite Panel",
-    seoTitle: "Pemasangan ACP (Aluminium Composite Panel) Karawang & Jabodetabek | PT Kana Jaya",
+    title: "Pemasangan ACP Aluminium Composite Panel",
+    seoTitle: "Pemasangan ACP Aluminium Composite Panel Karawang & Jabodetabek | PT Kana Jaya",
     description: "Spesialis ACP untuk fasad dan interior bangunan di berbagai kota di Indonesia.",
     imageUrl: "/images/layananKami/aluminiumCompositePanel.webp",
     content:

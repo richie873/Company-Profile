@@ -38,7 +38,7 @@ export default function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         navbarScrolled
-          ? "bg-[#1E3A8A] shadow-md py-[8px]"
+          ? "bg-[#19123b] shadow-md py-[8px]"
           : "bg-transparent py-[16px]"
       }`}
     >
@@ -82,7 +82,7 @@ export default function Navbar() {
           >
             <div className="relative w-full h-full">
               <Image
-                src="/images/kanajaya.jpg"
+                src="/images/kanajayanew.jpg"
                 alt="Kana Jaya Logo"
                 fill
                 className="object-contain"
